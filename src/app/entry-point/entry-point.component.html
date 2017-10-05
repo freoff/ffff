@@ -1,0 +1,76 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="https://vouchercart.com/landing-page/img/logo-dot.png" alt="" height="32">
+  </a>
+  <button class="navbar-toggler " type="button" (click)="toggleNavbar()" aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div #menu class="collapse navbar-collapse justify-content-end" (click)="toggleNavbar()" id="navbarSupportedContent">
+
+    <a routerLink="/" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{}" class="nav-item nav-link">Home</a>
+    <a routerLink="/registration" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{}"
+       class="nav-item nav-link">Registration</a>
+    <a routerLink="/" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{}" class="nav-item nav-link">Home</a>
+
+  </div>
+</nav>
+
+<div class="row m-2 justify-content-center">
+  <div class="d-flex col-md-8  flex-column flex-sm-row">
+    <div id="md" class="d-flex flex-column w-100 dropdown mr-md-3">
+      <input id="email" type="email"
+             [ngClass]="{error: toched && !emailIsValid}"
+             [attr.data-toched]="toched ? '' : null"
+             (keyup)="validateEmail(email.value)"
+             (blur)="exitFromInput()"
+             class="form-control" type="text" name="email" #email>
+      <label for="email" required>Email</label>
+      <p class="mt-2" [ngClass]="{'show-error': !hideErorMag }" class="error-msg">
+        Błędny adres email
+      </p>
+    </div>
+
+    <div class="mt-1 mt-sm-0">
+      <button
+        (click)="registerWithEmail(email.value)"
+
+        [disabled]="buttonDisabled"
+        class="w-100 btn  btn-outline-primary align-self-baseline mt-1 mb-1 ml-sm-2 ml-md-0"><span>Signup for free</span>
+      </button>
+    </div>
+
+  </div>
+
+</div>
+<div class="row">
+  <div class="col m-2 justify-content-center">
+    <div class="col col-md-10 col-sm-12 m-auto">
+      <div class="card ">
+        <div class="card-header">Lorem</div>
+        <div class="card-body">
+          <p>Lorem ipsum dolor sit amet lacus. Duis sodales quam. Aliquam adipiscing elit. Aliquam ut lacus. Cras at
+            lobortis semper. Praesent eu pede nec magna. Aliquam interdum malesuada. Sed adipiscing. Vestibulum laoreet,
+            nulla a bibendum pede. Morbi vitae imperdiet wisi, eget augue a bibendum varius risus eu pulvinar augue. Donec
+            odio nec eros. Integer a quam ac nunc neque, quis wisi. Sed eu lorem. Vivamus faucibus quis, velit. Nullam
+            fermentum sed, fermentum tortor. Phasellus ipsum wisi, id fringilla aliquet. Donec aliquam arcu. Etiam in
+            fNullam vulputate accumsan. Nullam erat volutpat. Vestibulum scelerisque condimentum
+            ultricies, velit eros quis massa. Nam lacus. Aenean mollis vel, hendrerit sollicitudin orci. Nullam in nibh
+            porta ac, felis. Integer ac est.</p>
+
+
+
+          <p>Integer leo sed sem. Sed eros. Suspendisse justo consequat et, ultricies iaculis at, tellus. Donec sodales
+            nulla nulla, vitae libero ipsum dolor dictum justo nibh, eu pulvinar sem ac turpis rutrum laoreet. Nam
+            cnia dui. Suspendisse potenti. Cras a dolor. Donec nec erat id justo nibh, sed viverra pede
+            massa, feugiat facilisis urna eros ut metus nec diam. Suspendisse at tortor. In pharetra. Morbi commodo. Cras
+            ut nunc ut wisi. Phasellus urna augue, rhoncus ante ipsum sit amet quam. Nulla facilisi. Morbi tellus.
+            Praesent nec mauris. Cras dolor sit amet leo. In justo euismod orci et orci luctus et ligula. Mauris mi leo
+            non orci. Morbi accumsan urna, egestas blandit, lectus non elit ornare euismod. Sed sollicitudin.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,64 @@
+*{
+  font-family: 'Play', sans-serif;
+}
+button span {
+  color: /*orange*/#E77F1D
+}
+button {
+  border: solid 2px #E77F1D;
+}
+.nav-item {
+  color: #E77F1D;
+}
+#md input{
+  margin-top: .7rem;
+  margin-right:0;
+  border: none;
+  border-bottom: solid 1px #E77F1D;
+  border-radius: 0;
+  color: rgba(0, 0, 0, 0.70);
+  padding-bottom: 1px;
+
+
+}
+#md label {
+  color: rgba(0, 0, 0, 0.54);
+  text-transform: uppercase;
+  font-size: 1rem;
+  position: absolute;
+  top: 0;
+  margin-left: 2rem;
+  transition: all 0.5s ease-in;
+}
+#email:focus + label {
+  font-size: .7rem;
+  top:.2rem;
+
+}
+#email[data-toched]  + label {
+  font-size: .7rem;
+  top:.2rem;
+
+}
+.error {
+  border-bottom-color: darkred !important;
+}
+.error + label {
+  font-size: .6rem;
+  color: darkred !important;
+
+}
+.error-msg {
+  opacity: 0;
+  margin: 0;
+  color: darkred;
+  font-size: .7rem;
+  transition: all .4s ease-in;
+  text-transform: uppercase;
+}
+.show-error{
+  opacity: 1;
+}
+.card-header {
+  background-color: rgba(231, 127, 29, .5);
+}
