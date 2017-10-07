@@ -2,17 +2,38 @@ import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';
+import { RegistrationParams } from './RegistrationParams';
+import { RegistrationFormProvider } from './registration-form.provider';
+import { FormGroup } from '@angular/forms';
 
 @Injectable()
 export class RegistrationProvider {
   private _DOMAIN_CHECK_URL = 'http://httpbin.org/get';
+  public params: RegistrationParams;
+  private form: FormGroup
 
-  constructor(private _http: Http) {
-
+  constructor(private http: Http,
+              registrationForm: RegistrationFormProvider) {
+    this.form = registrationForm.registrationForm;
   }
 
   checkDomain(domain: string) {
-    return this._http.get(this._DOMAIN_CHECK_URL, {params: {domain}})
-      .map((response: Response) => response.json());
+
+    return this.http.get(this._DOMAIN_CHECK_URL, {params: {domain}})
+      .subscribe(response => {
+        // TODO edit domain validator
+      });
+  }
+
+  submit() {
+    if (this.params.hasOwnProperty('resselerId')) {
+      this.form.setValue({'resselerId': this.params['resselerId']});
+    }
+    // TODO getRegistration url, and server response blueprint ;)
+    if (this.form.errors === null) {
+      return this.http.post('https://vouchercart.com/registration',
+        this.form, {});
+    }
+
   }
 }

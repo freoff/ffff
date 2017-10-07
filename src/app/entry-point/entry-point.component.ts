@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
-import isemail from 'isemail';
+import * as isemail from 'isemail';
 
 @Component({
   selector: 'app-entry-point',
@@ -30,6 +30,7 @@ export class EntryPointComponent implements OnInit {
   }
 
   validateEmail/*onKeypress*/(ev) {
+    console.log(ev.target.value);
     this.emailIsValid = isemail.validate(ev.target.value);
     if (this.toched) {
       this.hideErorMag = this.emailIsValid;

@@ -1,13 +1,17 @@
-import { Component, OnInit, AfterViewChecked, OnChanges, SimpleChanges, ViewChild, ElementRef } from '@angular/core';
-import { ActivatedRoute, RouterState } from '@angular/router';
+import {
+  Component, OnInit, AfterViewChecked, OnChanges, SimpleChanges, ViewChild, ElementRef,
+  ViewChildren
+} from '@angular/core';
+import { ActivatedRoute, Router, RouterState } from '@angular/router';
 import { RegistrationParams } from './RegistrationParams';
 import { RegistrationProvider } from './registration.provider';
+import { RegistrationFormProvider } from './registration-form.provider';
 
 @Component({
   selector: 'app-registration',
   templateUrl: './registration.component.html',
   styleUrls: ['./registration.component.css'],
-  providers: [RegistrationProvider]
+
 })
 export class RegistrationComponent implements OnInit, AfterViewChecked, OnChanges {
   editEmail = false;
@@ -15,32 +19,26 @@ export class RegistrationComponent implements OnInit, AfterViewChecked, OnChange
 
   @ViewChild('emailInput') emailInput: ElementRef;
 
-  constructor(private route: ActivatedRoute, private rProvider: RegistrationProvider) {
+  constructor(private activatedRoute: ActivatedRoute,
+              private router: Router,
+              private registrationProvider: RegistrationProvider) {
   }
 
   ngOnInit() {
-    this.route.params.subscribe(params => this.params = {...params});
-    this.editEmail = !this.params.hasOwnProperty('email');
-    // TODO remove it
-    this.rProvider.checkDomain('domainToCheck').subscribe(console.log);
+    this.activatedRoute.params.subscribe(params => this.registrationProvider.params = this.params = {...params});
+    if (Object.keys(this.params).length > 0) {
+      this.router.navigate(['step1'],
+        {
+          relativeTo: this.activatedRoute.parent,
+          skipLocationChange: true,
+
+        });
+    }
   }
 
   ngAfterViewChecked(): void {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-  }
-
-  onEditEmailToggle(emailInput) {
-    if (this.params.hasOwnProperty('email')) {
-      this.editEmail = !this.editEmail;
-      this.editEmail && this.emailInput.nativeElement.focus();
-    }
-  }
-
-  onEnterPress(event, action, ...arg) {
-    if (event.key === 'Enter') {
-      action ? action(arg) : event.target.blur();
-    }
   }
 }

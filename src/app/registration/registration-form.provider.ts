@@ -19,14 +19,18 @@ export class RegistrationFormProvider {
     this._email = email;
   }
 
+// TODO add validator to companyName (checkdomain in registrationProvider)
   private buildForm() {
-    const [require, email] = [Validators.required, Validators.email];
-
     this._registrationForm = this.fb.group({
       'name': ['', Validators.required],
-      'email': [this._email, Validators.required, Validators.email],
+      'email': ['', Validators.email],
       'password': ['', Validators.required],
-      'companyName': ['', Validators.required]
+      'companyName': ['', Validators.required],
+      'country': ['', Validators.required],
+      'timeZone': ['', Validators.required],
+      'businessSector': ['', Validators.required],
+      'website': ['', Validators.required],
+
     });
   }
 }

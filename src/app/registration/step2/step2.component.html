@@ -1,0 +1,85 @@
+<h2 class="mt-4 text-center text-uppercase">
+  TELL US MORE</h2> <h5 class="text-center">About: <span>__firma__</span></h5>
+<div>
+  <div class="form-group">
+    <label for="country" class="field-require text-uppercase">
+      Country:
+    </label>
+    <div class="w-100 select-holder">
+      <select name="country" id="country" class="form-control">
+        <option disabled selected value> -- start type eg. US --</option>
+        <option *ngFor="let kraj of countryList"
+                [value]="kraj.code">
+          {{ kraj.code }} | {{ kraj.name }}
+        </option>
+
+      </select>
+    </div>
+  </div>
+  <div class="form-grou">
+    <label for="timeZone">TIMEZONE</label>
+    <div class="select-holder">
+      <select name="timeZone"
+              id="timeZone"
+              class="form-control">
+        <option disabled selected value> -- select an option --</option>
+        <option value="1">Zone 1</option>
+        <option value="2">Zone 2</option>
+        <option value="3">Zone 3</option>
+        <option value="4">Zone 4</option>
+        <option value="5">Zone 5</option>
+        <option value="6">Zone 6</option>
+        <option value="7">Zone 7</option>
+        <option value="8">Zone 8</option>
+        <option value="9">Zone 9</option>
+        <option value="10">Zone 10</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="businessSector">BUSINESS SECTOR</label>
+    <div class="select-holder">
+      <select name="businessSector"
+              id="businessSector"
+              class="form-control">
+        <option disabled selected value> -- select an option --</option>
+        <option value="1">B Sector 1</option>
+        <option value="2">B Sector 2</option>
+        <option value="3">B Sector 3</option>
+        <option value="4">B Sector 4</option>
+        <option value="5">B Sector 5</option>
+        <option value="6">B Sector 6</option>
+        <option value="7">B Sector 7</option>
+        <option value="8">B Sector 8</option>
+        <option value="9">B Sector 9</option>
+        <option value="10">B Sector 10</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="website" class="field-require text-uppercase">
+      add your business website
+    </label>
+    <input id="website"
+           name="website"
+           type="text"
+           class="form-control"
+           placeholder="eg: www.some.business.com">
+  </div>
+  <div class="d-flex justify-content-end">
+    <p class="mr-auto" id="footer-signin">
+      Already have account?<br>
+      <a href="#">Sign in here.</a>
+    </p>
+    <button type="button"
+            class="btn btn-primary col-md-3 mr-2"
+            routerLink="../step1">Back
+    </button>
+    <button type="button"
+            class="btn btn-primary col-md-3 text-uppercase"
+    (click)="submitForm()">
+      Let's get started
+    </button>
+
+  </div>
+</div>

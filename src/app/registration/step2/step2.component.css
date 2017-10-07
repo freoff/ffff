@@ -1,0 +1,10 @@
+@import "../registration.component.css";
+select {
+  background: white url("/assets/down.png") no-repeat 90%;
+  overflow: hidden;
+  width: 110%;
+}
+.select-holder{
+  overflow: hidden;
+  border-right-color: #4267B2;
+}

@@ -1,7 +1,11 @@
-<div class="container">
+<div class="container-fluid">
   <div class="row">
     <div class="d-flex col-sm-12">
-      <div class="d-flex col-md-6 left flex-column">
+      <div class="d-flex col left flex-column">
+        router
+        <router-outlet></router-outlet>
+      </div>
+      <div *ngIf="false" class="d-flex col-md-6 left flex-column">
         <div class="social d-flex flex-wrap mt-4">
           <span class="mr-3">Connect with: </span>
           <a class="sign-in-button g-plus mr-3">
@@ -32,7 +36,7 @@
                      class="form-control"
                      placeholder="Enter Your Name">
             </div>
-            <div class="form-group " [ngClass]="{'first-item': params.email}" *ngIf="editEmail">
+            <div class="form-group " [ngClass]="{'first-item': params.email}" [hidden]="!editEmail">
               <label for="email" [hidden]="params.email" class="field-require text-uppercase">
                 Email
               </label>
@@ -90,7 +94,7 @@
           </form>
         </div>
       </div>
-      <div class="col-md-6 right d-none d-md-flex">IMG</div>
+      <div class="col-md-6 right d-none d-lg-flex">IMG</div>
     </div>
   </div>
 </div>

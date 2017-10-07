@@ -1,8 +1,15 @@
-input {
+input, select {
   border-color: #d8d8d8;
+  border-radius: 0;
 }
 button {
   background-color: #e77f1d;
+  border-color: #fff;
+  border: solid 2px;
+}
+button:hover {
+  background-color: #e76416;
+  border: 0;
 }
 .left {
   background-color: #f7f7f7;
@@ -10,7 +17,10 @@ button {
 }
 .right {
   height: 800px;
-  background-image: url("http://localhost:4200/assets/background.png");
+  background-image: url("http://localhost:4200/assets/bgI.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 .social{
   font-size: .8rem;
@@ -48,3 +58,9 @@ form > div {
   color: darkred;
   vertical-align: super;
 }
+#footer-signin, #footer-signin a {
+  color: #e77f1d;
+  font-size: .8rem;
+  text-decoration: none;
+}
+
