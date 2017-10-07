@@ -1,0 +1,50 @@
+input {
+  border-color: #d8d8d8;
+}
+button {
+  background-color: #e77f1d;
+}
+.left {
+  background-color: #f7f7f7;
+  height: 100%;
+}
+.right {
+  height: 800px;
+  background-image: url("http://localhost:4200/assets/background.png");
+}
+.social{
+  font-size: .8rem;
+  align-items: center;
+}
+.sign-in-button {
+  cursor: pointer;
+  display: inline-block;
+  padding:.2rem .5rem;
+  border: solid 1px;
+  margin:.1rem
+}
+.sign-in-button:hover {
+  box-shadow: 0 0 2px 1px;
+}
+.fb {
+  border-color: #4267B2;
+  color: #4267B2 !important;
+}
+.g-plus {
+  border-color: #DE5E53;
+  color: #DE5E53 !important;
+}
+.entryEmail a {
+  cursor: pointer;
+}
+form > div {
+  order:10;
+}
+.first-item {
+  order: 1 !important;
+}
+.field-require:after{
+  content: '*';
+  color: darkred;
+  vertical-align: super;
+}
