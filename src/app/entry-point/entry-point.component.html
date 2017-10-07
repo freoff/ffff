@@ -21,12 +21,12 @@
 <div class="row m-2 justify-content-center">
   <div class="d-flex col-md-8  flex-column flex-sm-row">
     <div id="md" class="d-flex flex-column w-100 dropdown mr-md-3">
-      <input id="email" type="email"
+      <input #email id="email" type="email"
              [ngClass]="{error: toched && !emailIsValid}"
              [attr.data-toched]="toched ? '' : null"
-             (keyup)="validateEmail(email.value)"
+             (keyup)="validateEmail($event)"
              (blur)="exitFromInput()"
-             class="form-control" type="text" name="email" #email>
+             class="form-control" type="text" name="email" >
       <label for="email" required>Email</label>
       <p class="mt-2" [ngClass]="{'show-error': !hideErorMag }" class="error-msg">
         Błędny adres email
@@ -35,8 +35,8 @@
 
     <div class="mt-1 mt-sm-0">
       <button
+        #goToRegisBtn
         (click)="registerWithEmail(email.value)"
-
         [disabled]="buttonDisabled"
         class="w-100 btn  btn-outline-primary align-self-baseline mt-1 mb-1 ml-sm-2 ml-md-0"><span>Signup for free</span>
       </button>
@@ -44,6 +44,12 @@
 
   </div>
 
+</div>
+<div class="row nav justify-content-center">
+
+    <div><a class="nav-item nav-link" routerLink="/registration">Registration</a></div>
+    <div><a class="nav-item nav-link" routerLink="/registration/email@em.pl">Registration with email</a></div>
+    <div><a class="nav-item nav-link" routerLink="/registration">Registration</a></div>
 </div>
 <div class="row">
   <div class="col m-2 justify-content-center">

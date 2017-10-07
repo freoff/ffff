@@ -1,5 +1,5 @@
-import {Component, OnInit, ViewChild, ElementRef} from '@angular/core';
-import {Router} from '@angular/router';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Router } from '@angular/router';
 import isemail from 'isemail';
 
 @Component({
@@ -9,6 +9,7 @@ import isemail from 'isemail';
 })
 export class EntryPointComponent implements OnInit {
   @ViewChild('menu') collapsedMenu: ElementRef;
+  @ViewChild('goToRegisBtn') registerButton: ElementRef;
   emailIsValid: boolean;
   hideErorMag = true;
   buttonDisabled = true;
@@ -25,20 +26,23 @@ export class EntryPointComponent implements OnInit {
   }
 
   registerWithEmail(email) {
-    console.log();
     this.router.navigate(['/registration', email]);
   }
 
-  validateEmail/*onKeypress*/(email: string) {
-
-    this.emailIsValid = isemail.validate(email);
-    if(this.toched) this.hideErorMag = this.emailIsValid;
+  validateEmail/*onKeypress*/(ev) {
+    this.emailIsValid = isemail.validate(ev.target.value);
+    if (this.toched) {
+      this.hideErorMag = this.emailIsValid;
+    }
     this.buttonDisabled = !this.emailIsValid;
-    console.log(`Validate ${email} validEmail is ${this.emailIsValid}`);
+    if (ev.code === 'Enter') {
+      this.registerButton.nativeElement.click();
+    }
   }
 
-  exitFromInput() {
+  exitFromInput(ev: KeyboardEvent) {
     this.toched = true;
     this.hideErorMag = this.emailIsValid;
+
   }
 }
