@@ -26,7 +26,7 @@
              [attr.data-toched]="toched ? '' : null"
              (keyup)="validateEmail($event)"
              (blur)="exitFromInput()"
-             class="form-control" type="text" name="email" >
+             class="form-control" type="text" name="email">
       <label for="email" required>Email</label>
       <p class="mt-2" [ngClass]="{'show-error': !hideErorMag }" class="error-msg">
         Błędny adres email
@@ -38,18 +38,24 @@
         #goToRegisBtn
         (click)="registerWithEmail(email.value)"
         [disabled]="buttonDisabled"
-        class="w-100 btn  btn-outline-primary align-self-baseline mt-1 mb-1 ml-sm-2 ml-md-0"><span>Signup for free</span>
+        class="w-100 btn  btn-outline-primary align-self-baseline mt-1 mb-1 ml-sm-2 ml-md-0">
+        <span>Signup for free</span>
       </button>
     </div>
 
   </div>
 
 </div>
+
+<h3 class="text-center">Example link http://[domain]/registration/:email/:resseler/:kraj</h3>
+
 <div class="row nav justify-content-center">
 
-    <div><a class="nav-item nav-link" routerLink="/registration">Registration</a></div>
-    <div><a class="nav-item nav-link" routerLink="/registration/email@em.pl">Registration with email</a></div>
-    <div><a class="nav-item nav-link" routerLink="/registration">Registration</a></div>
+
+  <div><a class="nav-item nav-link" routerLink="/registration">/registration</a></div>
+  <div><a class="nav-item nav-link" routerLink="/registration/email@em.pl">/registration/email@em.pl</a></div>
+  <div><a class="nav-item nav-link" routerLink="/registration/email@em.pl/resselrUNO">/registration/email@em.pl/resselrUNO</a>
+  </div>
 </div>
 <div class="row">
   <div class="col m-2 justify-content-center">
@@ -59,7 +65,8 @@
         <div class="card-body">
           <p>Lorem ipsum dolor sit amet lacus. Duis sodales quam. Aliquam adipiscing elit. Aliquam ut lacus. Cras at
             lobortis semper. Praesent eu pede nec magna. Aliquam interdum malesuada. Sed adipiscing. Vestibulum laoreet,
-            nulla a bibendum pede. Morbi vitae imperdiet wisi, eget augue a bibendum varius risus eu pulvinar augue. Donec
+            nulla a bibendum pede. Morbi vitae imperdiet wisi, eget augue a bibendum varius risus eu pulvinar augue.
+            Donec
             odio nec eros. Integer a quam ac nunc neque, quis wisi. Sed eu lorem. Vivamus faucibus quis, velit. Nullam
             fermentum sed, fermentum tortor. Phasellus ipsum wisi, id fringilla aliquet. Donec aliquam arcu. Etiam in
             fNullam vulputate accumsan. Nullam erat volutpat. Vestibulum scelerisque condimentum
@@ -67,11 +74,11 @@
             porta ac, felis. Integer ac est.</p>
 
 
-
           <p>Integer leo sed sem. Sed eros. Suspendisse justo consequat et, ultricies iaculis at, tellus. Donec sodales
             nulla nulla, vitae libero ipsum dolor dictum justo nibh, eu pulvinar sem ac turpis rutrum laoreet. Nam
             cnia dui. Suspendisse potenti. Cras a dolor. Donec nec erat id justo nibh, sed viverra pede
-            massa, feugiat facilisis urna eros ut metus nec diam. Suspendisse at tortor. In pharetra. Morbi commodo. Cras
+            massa, feugiat facilisis urna eros ut metus nec diam. Suspendisse at tortor. In pharetra. Morbi commodo.
+            Cras
             ut nunc ut wisi. Phasellus urna augue, rhoncus ante ipsum sit amet quam. Nulla facilisi. Morbi tellus.
             Praesent nec mauris. Cras dolor sit amet leo. In justo euismod orci et orci luctus et ligula. Mauris mi leo
             non orci. Morbi accumsan urna, egestas blandit, lectus non elit ornare euismod. Sed sollicitudin.</p>

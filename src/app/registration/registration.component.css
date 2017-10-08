@@ -2,62 +2,120 @@ input, select {
   border-color: #d8d8d8;
   border-radius: 0;
 }
+
+.ng-pristine.ng-invalid.ng-touched ~ label {
+  display: block;
+  margin: 0;
+  content: 'Field Required!';
+  text-transform: uppercase;
+  color: darkred;
+}
+
+.form-group .ng-invalid.ng-touched {
+  border-color: darkred;
+  box-shadow: 0 0 1px 1px darkred !important;
+  background: white url("../../assets/error.png") no-repeat right !important;
+}
+
+.form-group .ng-valid.ng-dirty.ng-touched {
+  border-color: #e77f1d;
+  box-shadow: 0 0 1px 1px #e77f1d;
+  background: white url("../../assets/ok.png") no-repeat right !important;
+}
+
+.ignore .error input {
+  border-color: darkred;
+  box-shadow: 0 0 1px 1px darkred;
+  background: url("../../assets/error.png") no-repeat right !important;
+}
+
+.error p {
+  color: darkred;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: .8rem;
+  margin-bottom: 0;
+}
+
+.ignore .valid input {
+  border-color: #e77f1d;
+  box-shadow: 0 0 1px 1px #e77f1d;
+  background: url("../../assets/ok.png") no-repeat right !important;
+}
+
 button {
   background-color: #e77f1d;
   border-color: #fff;
   border: solid 2px;
 }
+
 button:hover {
   background-color: #e76416;
   border: 0;
 }
+button:disabled {
+  background-color: #ecaa00;
+  border: 0;
+}
+
 .left {
   background-color: #f7f7f7;
   height: 100%;
 }
+
 .right {
   height: 800px;
-  background-image: url("http://localhost:4200/assets/bgI.png");
+  background-image: url('../../assets/bgI.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
-.social{
+
+.social {
   font-size: .8rem;
   align-items: center;
 }
+
 .sign-in-button {
   cursor: pointer;
   display: inline-block;
-  padding:.2rem .5rem;
+  padding: .2rem .5rem;
   border: solid 1px;
-  margin:.1rem
+  margin: .1rem
 }
+
 .sign-in-button:hover {
   box-shadow: 0 0 2px 1px;
 }
+
 .fb {
   border-color: #4267B2;
   color: #4267B2 !important;
 }
+
 .g-plus {
   border-color: #DE5E53;
   color: #DE5E53 !important;
 }
+
 .entryEmail a {
   cursor: pointer;
 }
+
 form > div {
-  order:10;
+  order: 10;
 }
+
 .first-item {
   order: 1 !important;
 }
-.field-require:after{
+
+.field-require:after {
   content: '*';
   color: darkred;
   vertical-align: super;
 }
+
 #footer-signin, #footer-signin a {
   color: #e77f1d;
   font-size: .8rem;

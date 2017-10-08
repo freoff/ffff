@@ -4,13 +4,13 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';
 import { RegistrationParams } from './RegistrationParams';
 import { RegistrationFormProvider } from './registration-form.provider';
-import { FormGroup } from '@angular/forms';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Injectable()
 export class RegistrationProvider {
   private _DOMAIN_CHECK_URL = 'http://httpbin.org/get';
   public params: RegistrationParams;
-  private form: FormGroup
+  private form: FormGroup;
 
   constructor(private http: Http,
               registrationForm: RegistrationFormProvider) {
@@ -19,21 +19,19 @@ export class RegistrationProvider {
 
   checkDomain(domain: string) {
 
-    return this.http.get(this._DOMAIN_CHECK_URL, {params: {domain}})
-      .subscribe(response => {
-        // TODO edit domain validator
-      });
+    return this.http.get(this._DOMAIN_CHECK_URL, {params: {domain}});
+
   }
 
   submit() {
-    if (this.params.hasOwnProperty('resselerId')) {
-      this.form.setValue({'resselerId': this.params['resselerId']});
+    if (this.params.hasOwnProperty('resellerId')) {
+      this.form.patchValue({'resellerId': this.params.resellerID});
+    }
+    if (this.params.hasOwnProperty('kraj')) {
+      this.form.patchValue({'kraj': this.params.kraj});
     }
     // TODO getRegistration url, and server response blueprint ;)
-    if (this.form.errors === null) {
-      return this.http.post('https://vouchercart.com/registration',
-        this.form, {});
-    }
-
+    console.log(this.form.value);
+    //window.localStorage.setItem(Date.now(), this.form.value);
   }
 }

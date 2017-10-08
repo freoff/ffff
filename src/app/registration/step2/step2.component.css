@@ -1,8 +1,9 @@
 @import "../registration.component.css";
 select {
-  background: white url("/assets/down.png") no-repeat 90%;
+  /*background: white url("/assets/down.png") no-repeat 90%;*/
+  background-color: white;
   overflow: hidden;
-  width: 110%;
+  width: 100%;
 }
 .select-holder{
   overflow: hidden;

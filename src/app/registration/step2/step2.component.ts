@@ -5,6 +5,7 @@ import 'rxjs/operator/every';
 import 'rxjs/add/operator/do';
 import { RegistrationFormProvider } from '../registration-form.provider';
 import { RegistrationProvider } from '../registration.provider';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-step2',
@@ -12,11 +13,13 @@ import { RegistrationProvider } from '../registration.provider';
   styleUrls: ['./step2.component.css']
 })
 export class Step2Component implements OnInit, AfterViewChecked {
-  public countryList: {name: string, key: string}[];
-
+  public countryList: { name: string, key: string }[];
+  public registrationForm: FormGroup;
+  public submitedData;
   constructor(private http: Http,
-              private registrationForm: RegistrationFormProvider,
+              private formProvider: RegistrationFormProvider,
               private registrationProvider: RegistrationProvider) {
+    this.registrationForm = formProvider.registrationForm;
   }
 
   ngAfterViewChecked() {
@@ -30,6 +33,8 @@ export class Step2Component implements OnInit, AfterViewChecked {
   }
 
   submitForm() {
+
     this.registrationProvider.submit();
+    this.submitedData = this.registrationForm.value;
   }
 }

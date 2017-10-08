@@ -7,6 +7,8 @@ import { RegistrationFormProvider } from './registration-form.provider';
 import { Step1Component } from './step1/step1.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Step2Component } from './step2/step2.component';
+import { DisplayValidationDirective } from './directive/display-validation.directive';
+import { ErrorDisplayerComponent } from './error-displayer/error-displayer.component';
 
 const routes: Routes = [
   {
@@ -34,7 +36,9 @@ const routes: Routes = [
   declarations: [
     RegistrationComponent,
     Step1Component,
-    Step2Component
+    Step2Component,
+    DisplayValidationDirective,
+    ErrorDisplayerComponent
   ],
   providers: [RegistrationProvider, RegistrationFormProvider]
 })
