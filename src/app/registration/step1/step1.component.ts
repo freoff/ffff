@@ -3,6 +3,7 @@ import { RegistrationParams } from '../RegistrationParams';
 import { ActivatedRoute } from '@angular/router';
 import { RegistrationProvider } from '../registration.provider';
 import { RegistrationFormProvider } from '../registration-form.provider';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-step1',
@@ -10,15 +11,16 @@ import { RegistrationFormProvider } from '../registration-form.provider';
   styleUrls: ['./step1.component.css']
 })
 export class Step1Component implements OnInit, AfterViewChecked, OnChanges {
-  private registra
+  private cl = console.dir;
   editEmail = false;
   params: RegistrationParams = {};
-
+  registrationForm: FormGroup;
   @ViewChild('emailInput') emailInput: ElementRef;
 
   constructor(private route: ActivatedRoute,
               private registrationProvider: RegistrationProvider,
               private formProvider: RegistrationFormProvider) {
+    this.registrationForm = formProvider.registrationForm;
   }
 
   ngOnInit() {
@@ -31,6 +33,7 @@ export class Step1Component implements OnInit, AfterViewChecked, OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
+    console.log(this.registrationForm);
   }
   onEditEmailToggle(emailInput) {
     if (this.params.hasOwnProperty('email')) {

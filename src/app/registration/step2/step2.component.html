@@ -1,12 +1,13 @@
 <h2 class="mt-4 text-center text-uppercase">
-  TELL US MORE</h2> <h5 class="text-center">About: <span>__firma__</span></h5>
-<div>
+  <p>{{ registrationForm.value | json }}</p>
+  TELL US MORE</h2> <h5 class="text-center">About: <span>{{registrationForm.get('companyName').value}}</span></h5>
+<form [formGroup]="registrationForm">
   <div class="form-group">
     <label for="country" class="field-require text-uppercase">
       Country:
     </label>
-    <div class="w-100 select-holder">
-      <select name="country" id="country" class="form-control">
+    <div   class="w-100 select-holder">
+      <select  name="country" id="country" class="form-control" formControlName="country">
         <option disabled selected value> -- start type eg. US --</option>
         <option *ngFor="let kraj of countryList"
                 [value]="kraj.code">
@@ -16,12 +17,13 @@
       </select>
     </div>
   </div>
-  <div class="form-grou">
+  <div class="form-group">
     <label for="timeZone">TIMEZONE</label>
     <div class="select-holder">
       <select name="timeZone"
               id="timeZone"
-              class="form-control">
+              class="form-control"
+              formControlName="timeZone">
         <option disabled selected value> -- select an option --</option>
         <option value="1">Zone 1</option>
         <option value="2">Zone 2</option>
@@ -41,7 +43,9 @@
     <div class="select-holder">
       <select name="businessSector"
               id="businessSector"
-              class="form-control">
+              class="form-control"
+      formControlName="businessSector"
+      >
         <option disabled selected value> -- select an option --</option>
         <option value="1">B Sector 1</option>
         <option value="2">B Sector 2</option>
@@ -64,9 +68,10 @@
            name="website"
            type="text"
            class="form-control"
-           placeholder="eg: www.some.business.com">
+           placeholder="eg: www.some.business.com"
+    formControlName="website">
   </div>
-  <div class="d-flex justify-content-end">
+  <div class="d-flex justify-content-end align-items-start ">
     <p class="mr-auto" id="footer-signin">
       Already have account?<br>
       <a href="#">Sign in here.</a>
@@ -82,4 +87,4 @@
     </button>
 
   </div>
-</div>
+</form>

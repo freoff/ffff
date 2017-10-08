@@ -26,6 +26,7 @@ export class RegistrationFormProvider {
       'email': ['', Validators.email],
       'password': ['', Validators.required],
       'companyName': ['', Validators.required],
+      'domain': ['', Validators.required],
       'country': ['', Validators.required],
       'timeZone': ['', Validators.required],
       'businessSector': ['', Validators.required],
