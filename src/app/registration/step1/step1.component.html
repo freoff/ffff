@@ -1,4 +1,7 @@
-
+<p>
+  {{registrationForm.errors | json }}
+  <button (click)="cl((registrationForm.get('name').getError()))">log errors</button>
+</p>
 <div class="social d-flex flex-wrap mt-4">
   <span class="mr-3">Connect with: </span>
   <a class="sign-in-button g-plus mr-3">
