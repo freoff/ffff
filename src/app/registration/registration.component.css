@@ -1,8 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+.title  {
+  
+  color: #333333;
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 62px;
+}
+
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+.registration-main {
+  background-color: #f7f7f7;
+  margin: auto;
+  margin-top: 2rem;
+}
+.registration-app-window {
+  margin:1.3rem;
+  border: 1px solid silver;
+}
+
+
 input, select {
   border-color: #d8d8d8;
   border-radius: 0;
 }
-
+/*_________________________________________________________________________*/
 .ng-pristine.ng-invalid.ng-touched ~ label {
   display: block;
   margin: 0;
@@ -58,10 +88,7 @@ button:disabled {
   border: 0;
 }
 
-.left {
-  background-color: #f7f7f7;
-  height: 100%;
-}
+
 
 .right {
   height: 800px;
@@ -121,4 +148,5 @@ form > div {
   font-size: .8rem;
   text-decoration: none;
 }
+
 
