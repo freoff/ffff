@@ -23,17 +23,16 @@ export class RegistrationFormProvider {
   }
 
   public domainValidator(control: AbstractControl) {
+    // TODO remove thid mock
     return new Promise((res, rej) => {
       console.log(`start mock fetchin data for domain ${control.value}`);
       setTimeout(() => {
         console.log(`mock fetching complete for ${control.value}`);
         if (/^[a-dA-D]/.test(control.value)) {
-
           res(true);
         }
-        else res({domain: true});
+        else res({domain: true}); // tslint:disable-line
       }, 2000);
-
     });
   }
 
@@ -49,9 +48,6 @@ export class RegistrationFormProvider {
       'timeZone': ['', Validators.required],
       'businessSector': ['', Validators.required],
       'website': ['', Validators.required],
-      'resellerId': [''],
-      'kraj': ['']
-
     });
   }
 }

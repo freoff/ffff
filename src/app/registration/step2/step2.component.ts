@@ -1,5 +1,4 @@
 import { Component, OnInit, AfterViewChecked, OnChanges, SimpleChanges } from '@angular/core';
-import { list as countryList } from '../static-data/country';
 import { Http } from '@angular/http';
 import 'rxjs/operator/every';
 import 'rxjs/add/operator/do';

@@ -1,3 +1,4 @@
+<p>{{registrationForm.value | json}}</p>
 <h2 class="mt-4 text-center text-uppercase">
   TELL US MORE
 </h2> <h5 class="text-center">About: <span>{{registrationForm.get('companyName').value}}</span></h5>
@@ -8,9 +9,9 @@
     </label>
     <select name="country" id="country" class="form-control" formControlName="country">
       <option disabled selected value> -- start type eg. US --</option>
-      <option *ngFor="let kraj of countryList"
-              [value]="kraj.code">
-        {{ kraj.code }} | {{ kraj.name }}
+      <option *ngFor="let country of countryList"
+              [value]="country.code">
+        {{ country.code }} | {{ country.name }}
       </option>
 
     </select>

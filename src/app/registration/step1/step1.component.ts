@@ -14,19 +14,15 @@ import { FormGroup } from '@angular/forms';
   styleUrls: ['./step1.component.css']
 })
 export class Step1Component implements OnInit, AfterViewChecked, OnChanges {
-  done: boolean = false;
-  private cl = console.dir;
   editEmail = false;
   params: RegistrationParams = {};
   registrationForm: FormGroup;
-  oCrate = Object.create;
   @ViewChild('emailInput') emailInput: ElementRef;
 
   constructor(private route: ActivatedRoute,
               private registrationProvider: RegistrationProvider,
-              private formProvider: RegistrationFormProvider) {
-    this.registrationForm = formProvider.registrationForm;
-
+              private registrationFormProvider: RegistrationFormProvider) {
+    this.registrationForm = registrationFormProvider.registrationForm;
   }
 
   ngOnInit() {
@@ -36,11 +32,9 @@ export class Step1Component implements OnInit, AfterViewChecked, OnChanges {
   }
 
   ngAfterViewChecked(): void {
-
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-
   }
 
   onEditEmailToggle(emailInput) {
@@ -56,12 +50,5 @@ export class Step1Component implements OnInit, AfterViewChecked, OnChanges {
   }
 
   private setEmailOnlyOnece() {
-    if (!this.done) {
-      this.formProvider.registrationForm.patchValue({'email': this.params.email});
-
-      this.done = true;
-    }
-
-
   }
 }

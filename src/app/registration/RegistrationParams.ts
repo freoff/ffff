@@ -2,5 +2,6 @@
 export class RegistrationParams {
   email?: string;
   resellerID?: string;
-  kraj?: string;
+  country?: string;
+  lang?: string;
 }

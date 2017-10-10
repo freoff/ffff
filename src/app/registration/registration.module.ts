@@ -15,12 +15,13 @@ const routes: Routes = [
     path: 'registration',
     component: RegistrationComponent,
     children: [
+      {path: '', pathMatch: 'full', redirectTo: 'step1'},
       {path: 'step1', component: Step1Component},
       {path: 'step2', component: Step2Component},
-      {path: ':email/:resellerId/:kraj', component: RegistrationComponent},
+      {path: ':email/:resellerId/:country/:lang', component: RegistrationComponent},
+      {path: ':email/:resellerId/:country', component: RegistrationComponent},
       {path: ':email/:resellerId', component: RegistrationComponent},
       {path: ':email', component: RegistrationComponent},
-      {path: '', pathMatch: 'full', redirectTo: 'step1'},
     ]
   }
 ];

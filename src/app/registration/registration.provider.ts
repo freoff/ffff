@@ -24,14 +24,7 @@ export class RegistrationProvider {
   }
 
   submit() {
-    if (this.params.hasOwnProperty('resellerId')) {
-      this.form.patchValue({'resellerId': this.params.resellerID});
-    }
-    if (this.params.hasOwnProperty('kraj')) {
-      this.form.patchValue({'kraj': this.params.kraj});
-    }
     // TODO getRegistration url, and server response blueprint ;)
     console.log(this.form.value);
-    //window.localStorage.setItem(Date.now(), this.form.value);
   }
 }
