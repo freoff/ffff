@@ -1,0 +1,42 @@
+
+input{
+
+}
+
+
+
+.field-require:after {
+  content: ' *';
+  color: darkred;
+  vertical-align: super;
+}
+/*.form-group .ng-pristine.ng-invalid.ng-touched ~ label {*/
+  /*display: block;*/
+  /*margin: 0;*/
+  /*content: 'Field Required!';*/
+  /*text-transform: uppercase;*/
+  /*color: darkred;*/
+/*}*/
+
+.form-group .ng-invalid.ng-touched {
+  border-color: darkred;
+  box-shadow: 0 0 1px 0px darkred !important;
+  /*background: white url("../../assets/error.png") no-repeat right !important;*/
+}
+
+
+.form-group .ng-valid.ng-dirty.ng-touched {
+  border-color: #e77f1d;
+  box-shadow: 0 0 1px 1px #e77f1d;
+  /*background: white url("../../assets/ok.png") no-repeat right !important;*/
+}
+
+
+/*.error p {*/
+  /*color: lightcoral;*/
+  /*font-weight: bold;*/
+  /*text-transform: uppercase;*/
+  /*font-size: .8rem;*/
+  /*margin-bottom: 0;*/
+/*}*/
+

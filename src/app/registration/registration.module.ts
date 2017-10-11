@@ -9,6 +9,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Step2Component } from './step2/step2.component';
 import { DisplayValidationDirective } from './directive/display-validation.directive';
 import { ErrorDisplayerComponent } from './error-displayer/error-displayer.component';
+import { VcinputComponent } from './component/vcinput/vcinput.component';
 
 const routes: Routes = [
   {
@@ -39,7 +40,8 @@ const routes: Routes = [
     Step1Component,
     Step2Component,
     DisplayValidationDirective,
-    ErrorDisplayerComponent
+    ErrorDisplayerComponent,
+    VcinputComponent
   ],
   providers: [RegistrationProvider, RegistrationFormProvider]
 })

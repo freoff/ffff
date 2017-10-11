@@ -1,0 +1,22 @@
+<div class="form-group" [formGroup]="registrationForm">
+  <label [for]="myControlName" class="field-require text-uppercase">
+    Name
+  </label>
+  <div class="input-group">
+    <input [id]="myControlName"
+           [name]="myControlName"
+           [type]="inputType"
+           class="form-control"
+           [placeholder]="placeholder"
+           [formControlName]="myControlName"
+           [ngClass]="{'field-require': require}"
+           (blur)="onBlur($event)"
+    >
+    <span id='valid' class="input-group-addon fa fa-check"></span>
+    <span id="invalid" class="input-group-addon fa fa-times"></span>
+
+  </div>
+  <div class="">
+    <app-error-displayer [appFieldName]="myControlName"></app-error-displayer>
+  </div>
+</div>

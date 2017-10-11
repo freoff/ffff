@@ -23,19 +23,13 @@
 </div>
 <div class=""> <!--form_holder-->
   <form [formGroup]="registrationForm" class="d-flex flex-column">
-    <div class="form-group">
-      <label for="name" class="field-require text-uppercase">
-        Name
-      </label>
-      <input id="name"
-             name="name"
-             type="text"
-             class="form-control"
-             placeholder="Enter Your Name"
-             formControlName="name"
-      >
-      <app-error-displayer appFieldName="name"></app-error-displayer>
-    </div>
+
+    <app-vcinput myControlName="name"
+                 type="text"
+                 placeholder="Enter your name:"
+
+    ></app-vcinput>
+
     <div class="form-group " [ngClass]="{'first-item': params.email}" [hidden]="!editEmail">
       <label for="email" [hidden]="params.email" class="field-require text-uppercase">
         Email

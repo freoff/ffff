@@ -25,14 +25,18 @@ export class ErrorDisplayerComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.field = this.form.get(this.appFieldName);
-    this.subscription = this.form.valueChanges
-      .subscribe((get) => {
+    this.subscription = this.form.statusChanges
+      .subscribe((sch) => {
+        console.log('status change', sch);
+
         const validationErrors = this.field.errors;
         if (this.isEmptyObject(validationErrors) ||
           this.field.pristine
         ) {
-          this.errors = [];
-          return;
+          if (this.field.untouched || this.isEmptyObject(validationErrors )) {
+            this.errors = [];
+            return;
+          }
         }
 
         const result = Object.entries(this.field.errors)

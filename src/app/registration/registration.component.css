@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
 .title  {
-  
+
   color: #333333;
   font-family: Poppins;
   font-size: 30px;
@@ -31,46 +31,6 @@
 input, select {
   border-color: #d8d8d8;
   border-radius: 0;
-}
-/*_________________________________________________________________________*/
-.ng-pristine.ng-invalid.ng-touched ~ label {
-  display: block;
-  margin: 0;
-  content: 'Field Required!';
-  text-transform: uppercase;
-  color: darkred;
-}
-
-.form-group .ng-invalid.ng-touched {
-  border-color: darkred;
-  box-shadow: 0 0 1px 1px darkred !important;
-  background: white url("../../assets/error.png") no-repeat right !important;
-}
-
-.form-group .ng-valid.ng-dirty.ng-touched {
-  border-color: #e77f1d;
-  box-shadow: 0 0 1px 1px #e77f1d;
-  background: white url("../../assets/ok.png") no-repeat right !important;
-}
-
-.ignore .error input {
-  border-color: darkred;
-  box-shadow: 0 0 1px 1px darkred;
-  background: url("../../assets/error.png") no-repeat right !important;
-}
-
-.error p {
-  color: darkred;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: .8rem;
-  margin-bottom: 0;
-}
-
-.ignore .valid input {
-  border-color: #e77f1d;
-  box-shadow: 0 0 1px 1px #e77f1d;
-  background: url("../../assets/ok.png") no-repeat right !important;
 }
 
 button {
@@ -150,3 +110,43 @@ form > div {
 }
 
 
+/*_________________________________________________________________________*/
+/*.ng-pristine.ng-invalid.ng-touched ~ label {*/
+/*display: block;*/
+/*margin: 0;*/
+/*content: 'Field Required!';*/
+/*text-transform: uppercase;*/
+/*color: darkred;*/
+/*}*/
+
+/*.form-group .ng-invalid.ng-touched {*/
+/*border-color: darkred;*/
+/*box-shadow: 0 0 1px 1px darkred !important;*/
+/*background: white url("../../assets/error.png") no-repeat right !important;*/
+/*}*/
+
+/*.form-group .ng-valid.ng-dirty.ng-touched {*/
+/*border-color: #e77f1d;*/
+/*box-shadow: 0 0 1px 1px #e77f1d;*/
+/*background: white url("../../assets/ok.png") no-repeat right !important;*/
+/*}*/
+
+/*.ignore .error input {*/
+/*border-color: darkred;*/
+/*box-shadow: 0 0 1px 1px darkred;*/
+/*background: url("../../assets/error.png") no-repeat right !important;*/
+/*}*/
+
+/*.error p {*/
+/*color: darkred;*/
+/*font-weight: bold;*/
+/*text-transform: uppercase;*/
+/*font-size: .8rem;*/
+/*margin-bottom: 0;*/
+/*}*/
+
+/*.ignore .valid input {*/
+/*border-color: #e77f1d;*/
+/*box-shadow: 0 0 1px 1px #e77f1d;*/
+/*background: url("../../assets/ok.png") no-repeat right !important;*/
+/*}*/
