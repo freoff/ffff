@@ -1,28 +1,52 @@
-
-input{
-
+label {
+  font-size: .8rem;
 }
 
+input {
+  padding-left: 1rem;
+  border: 1px solid #D7D7D7;
+  border-radius: 0;
+  height: 3.1rem;
+  font-size: .8rem;
+  position: relative;
+}
+
+.input-area {
+  display: flex;
+  position: relative;
+}
+
+.icon-area {
+  display: flex;
+  position: absolute;
+  height: 100%;
+  right:1rem;
+  align-items: center;
+  justify-content: flex-end ;
+}
+.icon-area span {
+  font-size: 1rem;
+}
+.icon-valid {
+  color: #E67E22
+}
+.input-area .ng-valid.ng-dirty.ng-touched {
+  border: 1px solid #E67E22;
+}
+.icon-invalid {
+color: #E84C0F
+}
+.input-area .ng-invalid.ng-touched {
+border: 1px solid #E84C0F;
+}
 
 
 .field-require:after {
-  content: ' *';
-  color: darkred;
-  vertical-align: super;
+content: ' *';
+color: darkred;
+vertical-align: super;
 }
 
 
-.form-group .ng-invalid.ng-touched {
-  border-color: darkred;
-  box-shadow: 0 0 1px 0px darkred !important;
-  /*background: white url("../../assets/error.png") no-repeat right !important;*/
-}
-
-
-.form-group .ng-valid.ng-dirty.ng-touched {
-  border-color: #e77f1d;
-  box-shadow: 0 0 1px 1px #e77f1d;
-  /*background: white url("../../assets/ok.png") no-repeat right !important;*/
-}
 
 

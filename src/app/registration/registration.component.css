@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
-
+.content {
+  margin:1rem 3rem 1rem;
+}
 .title  {
 
   color: #333333;

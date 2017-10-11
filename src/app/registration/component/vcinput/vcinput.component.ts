@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { RegistrationFormProvider } from '../../registration-form.provider';
-import { FormGroup } from '@angular/forms';
+import { AbstractControl, FormControl, FormGroup } from '@angular/forms';
+import { AbstractControlStatus } from '@angular/forms/src/directives/ng_control_status';
 
 @Component({
   selector: 'app-vcinput',
@@ -8,26 +9,31 @@ import { FormGroup } from '@angular/forms';
   styleUrls: ['./vcinput.component.css']
 })
 export class VcinputComponent implements OnInit {
+  public controlObject: AbstractControl;
+  public registrationForm: FormGroup;
+
   @Input() myControlName: string;
   @Input() inputType: string;
   @Input() placeholder: string;
   @Input() require: boolean;
   @Input() defaultValue: string | null;
   @Input() order: number;
-  @Output() valueChange = new EventEmitter<string>();
+  @Input() customText: string;
 
-  registrationForm: FormGroup;
+  @Output() valueChange = new EventEmitter<string>();
 
   constructor(private registrationFormProvider: RegistrationFormProvider) {
     this.registrationForm = registrationFormProvider.registrationForm;
+
   }
 
   onChange(event: Event) {
     this.valueChange.emit((<HTMLInputElement>event.target).value);
+
   }
 
   ngOnInit() {
-
+    this.controlObject = this.registrationForm.get(this.myControlName);
   }
 
   onBlur(event: Event) {
@@ -36,6 +42,8 @@ export class VcinputComponent implements OnInit {
   }
 
   private clearField() {
-    this.registrationForm.controls[this.myControlName].setValue('');
+    this.controlObject.setValue('');
   }
+
+
 }

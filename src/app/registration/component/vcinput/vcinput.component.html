@@ -1,8 +1,8 @@
 <div class="form-group" [formGroup]="registrationForm">
   <label [for]="myControlName" class="field-require text-uppercase">
-    Name
+    Name {{controlObject.value}}
   </label>
-  <div class="input-group">
+  <div class="input-area">
     <input [id]="myControlName"
            [name]="myControlName"
            [type]="inputType"
@@ -12,11 +12,21 @@
            [ngClass]="{'field-require': require}"
            (blur)="onBlur($event)"
     >
-    <span id='valid' class="input-group-addon fa fa-check"></span>
-    <span id="invalid" class="input-group-addon fa fa-times"></span>
+    <div class="icon-area">
+      <span>{{customText}}</span>
+      <span  *ngIf="controlObject.valid && controlObject.touched"
+             class="fa fa-check icon-valid">
+
+      </span>
+      <span *ngIf="controlObject.invalid && controlObject.touched"
+            class="fa fa-times icon-invalid">
+
+      </span>
+    </div>
+
 
   </div>
-  <div class="">
+  <div class="error-area">
     <app-error-displayer [appFieldName]="myControlName"></app-error-displayer>
   </div>
 </div>
