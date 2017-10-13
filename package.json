@@ -26,7 +26,7 @@
     "core-js": "^2.4.1",
     "country-list": "^1.1.0",
     "font-awesome": "^4.7.0",
-    "isemail": "^3.0.0",
+    "jstz": "^1.0.11",
     "rxjs": "^5.4.2",
     "zone.js": "^0.8.14"
   },

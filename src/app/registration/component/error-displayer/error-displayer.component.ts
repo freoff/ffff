@@ -1,5 +1,5 @@
 import { Component, Input, OnDestroy, OnInit } from '@angular/core';
-import { RegistrationFormProvider } from '../registration-form.provider';
+import { RegistrationFormProvider } from '../../registration-form.provider';
 import { Subscription } from 'rxjs/Subscription';
 import { AbstractControl, FormGroup } from '@angular/forms';
 
@@ -10,8 +10,15 @@ import { AbstractControl, FormGroup } from '@angular/forms';
 })
 export class ErrorDisplayerComponent implements OnInit, OnDestroy {
 
+  @Input() emRequired = 'Field is required';
+  @Input() emMinLength = 'Minimal length is';
+  @Input() emEmail = 'Email is not valid';
+  @Input() emMax = 'This is to long, max length is';
+  @Input() emMin: string;
+  @Input() emDomainNotAviable: 'This url  is not aviable';
+  @Input() emDomainIncorrect: 'This url is no correct';
+  @Input() emDefault: 'Field has error';
   @Input() appFieldName: string;
-  @Input() appMinLength: number;
   private subscription: Subscription;
   private form: FormGroup;
   private field: AbstractControl;
@@ -21,47 +28,36 @@ export class ErrorDisplayerComponent implements OnInit, OnDestroy {
     this.form = formProvider.registrationForm;
 
   }
-
-
   ngOnInit() {
     this.field = this.form.get(this.appFieldName);
-    this.subscription = this.form.statusChanges
-      .subscribe((sch) => {
-        console.log('status change', sch);
-
-        const validationErrors = this.field.errors;
-        if (this.isEmptyObject(validationErrors) ||
-          this.field.pristine
-        ) {
-          if (this.field.untouched || this.isEmptyObject(validationErrors )) {
-            this.errors = [];
-            return;
-          }
-        }
-
-        const result = Object.entries(this.field.errors)
+    this.subscription = this.field.statusChanges
+      .subscribe(() => {
+        if (this.isEmptyObject(this.field.errors)) {
+          this.errors = [];
+          return;
+        } // tslint:disable-line
+        this.errors = Object.entries(this.field.errors)
           .map(([errorCode, errorObject]) => {
             if (errorCode === null) {
               return null;
             }
-            console.log(`get error code ${errorCode} value is ${errorObject}`);
-
             switch (errorCode) {
               case('required'): /* require */
-                return 'Field is required';
+                return this.emRequired;
               case('minlength'): /*{'minlength': {'requiredLength': minLength, 'actualLength': length}} :*/
-                return `Warnig minimal length is ${errorObject.requiredLength} now is ${errorObject.actualLength}`;
-              case('email'): /* email:true */
-                return 'Email is not valid';
-              case('max'): /* {'max': {'max': max, 'actual': control.value}} */
-                return `This is to long, max length is ${errorObject.max}`;
-              case('domain'):
-                return `Domain must start with [a-dA-D]`;
+                return `${this.emMin}${errorObject.requiredLength} now is ${errorObject.actualLength}`;
+              case('email'):
+                return this.emEmail; /* email:true */
+              case('max'):
+                return `${this.emMax} ${errorObject.max}`; /* {'max': {'max': max, 'actual': control.value}} */
+              case('domainNotAviable'):
+                return this.emDomainNotAviable;
+              case('domainIncorrect'):
+                return this.emDomainIncorrect;
               default:
                 return 'Field Error';
             }
           });
-        this.errors = result;
       });
   }
 

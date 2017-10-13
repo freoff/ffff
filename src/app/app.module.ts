@@ -7,6 +7,7 @@ import { EntryPointComponent } from './entry-point/entry-point.component';
 import { HttpModule } from '@angular/http';
 import { RegistrationModule } from './registration/registration.module';
 
+
 const routes: Routes = [
   {
     path: '',

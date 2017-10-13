@@ -14,7 +14,8 @@ import { FormGroup } from '@angular/forms';
   styleUrls: ['./step1.component.css']
 })
 export class Step1Component implements OnInit, AfterViewChecked, OnChanges {
-  editEmail = false;
+  editEmailVisable = false;
+
   params: RegistrationParams = {};
   registrationForm: FormGroup;
   @ViewChild('emailInput') emailInput: ElementRef;
@@ -27,8 +28,7 @@ export class Step1Component implements OnInit, AfterViewChecked, OnChanges {
 
   ngOnInit() {
     this.params = this.registrationProvider.params;
-    this.editEmail = !this.params.hasOwnProperty('email');
-    this.setEmailOnlyOnece();
+    this.editEmailVisable = this.registrationForm.get('email').value.length > 3;
   }
 
   ngAfterViewChecked(): void {
@@ -39,7 +39,7 @@ export class Step1Component implements OnInit, AfterViewChecked, OnChanges {
 
   onEditEmailToggle(emailInput) {
     if (this.params.hasOwnProperty('email')) {
-      this.editEmail = !this.editEmail;
+      this.editEmailVisable = !this.editEmailVisable;
     }
   }
 
@@ -49,6 +49,5 @@ export class Step1Component implements OnInit, AfterViewChecked, OnChanges {
     }
   }
 
-  private setEmailOnlyOnece() {
-  }
+
 }

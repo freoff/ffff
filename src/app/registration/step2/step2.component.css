@@ -1,11 +1,23 @@
 @import "../registration.component.css";
-select {
-  /*background: white url("/assets/down.png") no-repeat 90%;*/
-  background-color: white;
-  overflow: hidden;
-  width: 100%;
+label {
+  font-size: .8rem;
 }
-.select-holder{
-  overflow: hidden;
-  border-right-color: #4267B2;
+
+select {
+  color: #84827F;
+  padding-left: 1rem;
+  border: none;
+  border-radius: 0;
+  height: 3.1rem !important;
+  font-size: .8rem;
+  position: relative;
+}
+
+
+.select-area {
+  display: flex;
+  align-items: center;
+  border: 1px solid #D7D7D7;
+  background-color: #fff;
+  padding: 0 .2rem;
 }

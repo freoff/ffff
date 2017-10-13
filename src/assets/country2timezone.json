@@ -1,0 +1,2108 @@
+{
+  "af": [
+    {
+      "key": "Asia\/Kabul",
+      "value": "Kabul (GMT+4.5)"
+    }
+  ],
+  "al": [
+    {
+      "key": "Europe\/Tirane",
+      "value": "Tirane (GMT+2)"
+    }
+  ],
+  "dz": [
+    {
+      "key": "Africa\/Algiers",
+      "value": "Algiers (GMT+1)"
+    }
+  ],
+  "as": [
+    {
+      "key": "Pacific\/Pago_Pago",
+      "value": "Pago_Pago (GMT-11)"
+    }
+  ],
+  "ad": [
+    {
+      "key": "Europe\/Andorra",
+      "value": "Andorra (GMT+2)"
+    }
+  ],
+  "ao": [
+    {
+      "key": "Africa\/Luanda",
+      "value": "Luanda (GMT+1)"
+    }
+  ],
+  "ai": [
+    {
+      "key": "America\/Anguilla",
+      "value": "Anguilla (GMT-4)"
+    }
+  ],
+  "aq": [
+    {
+      "key": "Antarctica\/Casey",
+      "value": "Casey (GMT+11)"
+    },
+    {
+      "key": "Antarctica\/Davis",
+      "value": "Davis (GMT+7)"
+    },
+    {
+      "key": "Antarctica\/DumontDUrville",
+      "value": "DumontDUrville (GMT+10)"
+    },
+    {
+      "key": "Antarctica\/Mawson",
+      "value": "Mawson (GMT+5)"
+    },
+    {
+      "key": "Antarctica\/McMurdo",
+      "value": "McMurdo (GMT+13)"
+    },
+    {
+      "key": "Antarctica\/Palmer",
+      "value": "Palmer (GMT-3)"
+    },
+    {
+      "key": "Antarctica\/Rothera",
+      "value": "Rothera (GMT-3)"
+    },
+    {
+      "key": "Antarctica\/Syowa",
+      "value": "Syowa (GMT+3)"
+    },
+    {
+      "key": "Antarctica\/Troll",
+      "value": "Troll (GMT+2)"
+    },
+    {
+      "key": "Antarctica\/Vostok",
+      "value": "Vostok (GMT+6)"
+    }
+  ],
+  "ag": [
+    {
+      "key": "America\/Antigua",
+      "value": "Antigua (GMT-4)"
+    }
+  ],
+  "ar": [
+    {
+      "key": "America\/Argentina\/Buenos_Aires",
+      "value": "Argentina\/Buenos_Aires (GMT-3)"
+    },
+    {
+      "key": "America\/Argentina\/Catamarca",
+      "value": "Argentina\/Catamarca (GMT-3)"
+    },
+    {
+      "key": "America\/Argentina\/Cordoba",
+      "value": "Argentina\/Cordoba (GMT-3)"
+    },
+    {
+      "key": "America\/Argentina\/Jujuy",
+      "value": "Argentina\/Jujuy (GMT-3)"
+    },
+    {
+      "key": "America\/Argentina\/La_Rioja",
+      "value": "Argentina\/La_Rioja (GMT-3)"
+    },
+    {
+      "key": "America\/Argentina\/Mendoza",
+      "value": "Argentina\/Mendoza (GMT-3)"
+    },
+    {
+      "key": "America\/Argentina\/Rio_Gallegos",
+      "value": "Argentina\/Rio_Gallegos (GMT-3)"
+    },
+    {
+      "key": "America\/Argentina\/Salta",
+      "value": "Argentina\/Salta (GMT-3)"
+    },
+    {
+      "key": "America\/Argentina\/San_Juan",
+      "value": "Argentina\/San_Juan (GMT-3)"
+    },
+    {
+      "key": "America\/Argentina\/San_Luis",
+      "value": "Argentina\/San_Luis (GMT-3)"
+    },
+    {
+      "key": "America\/Argentina\/Tucuman",
+      "value": "Argentina\/Tucuman (GMT-3)"
+    },
+    {
+      "key": "America\/Argentina\/Ushuaia",
+      "value": "Argentina\/Ushuaia (GMT-3)"
+    }
+  ],
+  "am": [
+    {
+      "key": "Asia\/Yerevan",
+      "value": "Yerevan (GMT+4)"
+    }
+  ],
+  "aw": [
+    {
+      "key": "America\/Aruba",
+      "value": "Aruba (GMT-4)"
+    }
+  ],
+  "au": [
+    {
+      "key": "Antarctica\/Macquarie",
+      "value": "Macquarie (GMT+11)"
+    },
+    {
+      "key": "Australia\/Adelaide",
+      "value": "Adelaide (GMT+10.5)"
+    },
+    {
+      "key": "Australia\/Brisbane",
+      "value": "Brisbane (GMT+10)"
+    },
+    {
+      "key": "Australia\/Broken_Hill",
+      "value": "Broken_Hill (GMT+10.5)"
+    },
+    {
+      "key": "Australia\/Currie",
+      "value": "Currie (GMT+11)"
+    },
+    {
+      "key": "Australia\/Darwin",
+      "value": "Darwin (GMT+9.5)"
+    },
+    {
+      "key": "Australia\/Eucla",
+      "value": "Eucla (GMT+8.75)"
+    },
+    {
+      "key": "Australia\/Hobart",
+      "value": "Hobart (GMT+11)"
+    },
+    {
+      "key": "Australia\/Lindeman",
+      "value": "Lindeman (GMT+10)"
+    },
+    {
+      "key": "Australia\/Lord_Howe",
+      "value": "Lord_Howe (GMT+11)"
+    },
+    {
+      "key": "Australia\/Melbourne",
+      "value": "Melbourne (GMT+11)"
+    },
+    {
+      "key": "Australia\/Perth",
+      "value": "Perth (GMT+8)"
+    },
+    {
+      "key": "Australia\/Sydney",
+      "value": "Sydney (GMT+11)"
+    }
+  ],
+  "at": [
+    {
+      "key": "Europe\/Vienna",
+      "value": "Vienna (GMT+2)"
+    }
+  ],
+  "az": [
+    {
+      "key": "Asia\/Baku",
+      "value": "Baku (GMT+4)"
+    }
+  ],
+  "bs": [
+    {
+      "key": "America\/Nassau",
+      "value": "Nassau (GMT-4)"
+    }
+  ],
+  "bh": [
+    {
+      "key": "Asia\/Bahrain",
+      "value": "Bahrain (GMT+3)"
+    }
+  ],
+  "bd": [
+    {
+      "key": "Asia\/Dhaka",
+      "value": "Dhaka (GMT+6)"
+    }
+  ],
+  "bb": [
+    {
+      "key": "America\/Barbados",
+      "value": "Barbados (GMT-4)"
+    }
+  ],
+  "by": [
+    {
+      "key": "Europe\/Minsk",
+      "value": "Minsk (GMT+3)"
+    }
+  ],
+  "be": [
+    {
+      "key": "Europe\/Brussels",
+      "value": "Brussels (GMT+2)"
+    }
+  ],
+  "bz": [
+    {
+      "key": "America\/Belize",
+      "value": "Belize (GMT-6)"
+    }
+  ],
+  "bj": [
+    {
+      "key": "Africa\/Porto-Novo",
+      "value": "Porto-Novo (GMT+1)"
+    }
+  ],
+  "bm": [
+    {
+      "key": "Atlantic\/Bermuda",
+      "value": "Bermuda (GMT-3)"
+    }
+  ],
+  "bt": [
+    {
+      "key": "Asia\/Thimphu",
+      "value": "Thimphu (GMT+6)"
+    }
+  ],
+  "bo": [
+    {
+      "key": "America\/La_Paz",
+      "value": "La_Paz (GMT-4)"
+    }
+  ],
+  "bq": [
+    {
+      "key": "America\/Kralendijk",
+      "value": "Kralendijk (GMT-4)"
+    }
+  ],
+  "ba": [
+    {
+      "key": "Europe\/Sarajevo",
+      "value": "Sarajevo (GMT+2)"
+    }
+  ],
+  "bw": [
+    {
+      "key": "Africa\/Gaborone",
+      "value": "Gaborone (GMT+2)"
+    }
+  ],
+  "br": [
+    {
+      "key": "America\/Araguaina",
+      "value": "Araguaina (GMT-3)"
+    },
+    {
+      "key": "America\/Bahia",
+      "value": "Bahia (GMT-3)"
+    },
+    {
+      "key": "America\/Belem",
+      "value": "Belem (GMT-3)"
+    },
+    {
+      "key": "America\/Boa_Vista",
+      "value": "Boa_Vista (GMT-4)"
+    },
+    {
+      "key": "America\/Campo_Grande",
+      "value": "Campo_Grande (GMT-4)"
+    },
+    {
+      "key": "America\/Cuiaba",
+      "value": "Cuiaba (GMT-4)"
+    },
+    {
+      "key": "America\/Eirunepe",
+      "value": "Eirunepe (GMT-5)"
+    },
+    {
+      "key": "America\/Fortaleza",
+      "value": "Fortaleza (GMT-3)"
+    },
+    {
+      "key": "America\/Maceio",
+      "value": "Maceio (GMT-3)"
+    },
+    {
+      "key": "America\/Manaus",
+      "value": "Manaus (GMT-4)"
+    },
+    {
+      "key": "America\/Noronha",
+      "value": "Noronha (GMT-2)"
+    },
+    {
+      "key": "America\/Porto_Velho",
+      "value": "Porto_Velho (GMT-4)"
+    },
+    {
+      "key": "America\/Recife",
+      "value": "Recife (GMT-3)"
+    },
+    {
+      "key": "America\/Rio_Branco",
+      "value": "Rio_Branco (GMT-5)"
+    },
+    {
+      "key": "America\/Santarem",
+      "value": "Santarem (GMT-3)"
+    },
+    {
+      "key": "America\/Sao_Paulo",
+      "value": "Sao_Paulo (GMT-3)"
+    }
+  ],
+  "io": [
+    {
+      "key": "Indian\/Chagos",
+      "value": "Chagos (GMT+6)"
+    }
+  ],
+  "vg": [
+    {
+      "key": "America\/Tortola",
+      "value": "Tortola (GMT-4)"
+    }
+  ],
+  "bn": [
+    {
+      "key": "Asia\/Brunei",
+      "value": "Brunei (GMT+8)"
+    }
+  ],
+  "bg": [
+    {
+      "key": "Europe\/Sofia",
+      "value": "Sofia (GMT+3)"
+    }
+  ],
+  "bf": [
+    {
+      "key": "Africa\/Ouagadougou",
+      "value": "Ouagadougou (GMT+0)"
+    }
+  ],
+  "bi": [
+    {
+      "key": "Africa\/Bujumbura",
+      "value": "Bujumbura (GMT+2)"
+    }
+  ],
+  "kh": [
+    {
+      "key": "Asia\/Phnom_Penh",
+      "value": "Phnom_Penh (GMT+7)"
+    }
+  ],
+  "cm": [
+    {
+      "key": "Africa\/Douala",
+      "value": "Douala (GMT+1)"
+    }
+  ],
+  "ca": [
+    {
+      "key": "America\/Atikokan",
+      "value": "Atikokan (GMT-5)"
+    },
+    {
+      "key": "America\/Blanc-Sablon",
+      "value": "Blanc-Sablon (GMT-4)"
+    },
+    {
+      "key": "America\/Cambridge_Bay",
+      "value": "Cambridge_Bay (GMT-6)"
+    },
+    {
+      "key": "America\/Creston",
+      "value": "Creston (GMT-7)"
+    },
+    {
+      "key": "America\/Dawson",
+      "value": "Dawson (GMT-7)"
+    },
+    {
+      "key": "America\/Dawson_Creek",
+      "value": "Dawson_Creek (GMT-7)"
+    },
+    {
+      "key": "America\/Edmonton",
+      "value": "Edmonton (GMT-6)"
+    },
+    {
+      "key": "America\/Fort_Nelson",
+      "value": "Fort_Nelson (GMT-7)"
+    },
+    {
+      "key": "America\/Glace_Bay",
+      "value": "Glace_Bay (GMT-3)"
+    },
+    {
+      "key": "America\/Goose_Bay",
+      "value": "Goose_Bay (GMT-3)"
+    },
+    {
+      "key": "America\/Halifax",
+      "value": "Halifax (GMT-3)"
+    },
+    {
+      "key": "America\/Inuvik",
+      "value": "Inuvik (GMT-6)"
+    },
+    {
+      "key": "America\/Iqaluit",
+      "value": "Iqaluit (GMT-4)"
+    },
+    {
+      "key": "America\/Moncton",
+      "value": "Moncton (GMT-3)"
+    },
+    {
+      "key": "America\/Nipigon",
+      "value": "Nipigon (GMT-4)"
+    },
+    {
+      "key": "America\/Pangnirtung",
+      "value": "Pangnirtung (GMT-4)"
+    },
+    {
+      "key": "America\/Rainy_River",
+      "value": "Rainy_River (GMT-5)"
+    },
+    {
+      "key": "America\/Rankin_Inlet",
+      "value": "Rankin_Inlet (GMT-5)"
+    },
+    {
+      "key": "America\/Regina",
+      "value": "Regina (GMT-6)"
+    },
+    {
+      "key": "America\/Resolute",
+      "value": "Resolute (GMT-5)"
+    },
+    {
+      "key": "America\/St_Johns",
+      "value": "St_Johns (GMT-2.5)"
+    },
+    {
+      "key": "America\/Swift_Current",
+      "value": "Swift_Current (GMT-6)"
+    },
+    {
+      "key": "America\/Thunder_Bay",
+      "value": "Thunder_Bay (GMT-4)"
+    },
+    {
+      "key": "America\/Toronto",
+      "value": "Toronto (GMT-4)"
+    },
+    {
+      "key": "America\/Vancouver",
+      "value": "Vancouver (GMT-7)"
+    },
+    {
+      "key": "America\/Whitehorse",
+      "value": "Whitehorse (GMT-7)"
+    },
+    {
+      "key": "America\/Winnipeg",
+      "value": "Winnipeg (GMT-5)"
+    },
+    {
+      "key": "America\/Yellowknife",
+      "value": "Yellowknife (GMT-6)"
+    }
+  ],
+  "cv": [
+    {
+      "key": "Atlantic\/Cape_Verde",
+      "value": "Cape_Verde (GMT-1)"
+    }
+  ],
+  "ky": [
+    {
+      "key": "America\/Cayman",
+      "value": "Cayman (GMT-5)"
+    }
+  ],
+  "cf": [
+    {
+      "key": "Africa\/Bangui",
+      "value": "Bangui (GMT+1)"
+    }
+  ],
+  "td": [
+    {
+      "key": "Africa\/Ndjamena",
+      "value": "Ndjamena (GMT+1)"
+    }
+  ],
+  "cl": [
+    {
+      "key": "America\/Santiago",
+      "value": "Santiago (GMT-3)"
+    },
+    {
+      "key": "Pacific\/Easter",
+      "value": "Easter (GMT-5)"
+    }
+  ],
+  "cn": [
+    {
+      "key": "Asia\/Shanghai",
+      "value": "Shanghai (GMT+8)"
+    },
+    {
+      "key": "Asia\/Urumqi",
+      "value": "Urumqi (GMT+6)"
+    }
+  ],
+  "cx": [
+    {
+      "key": "Indian\/Christmas",
+      "value": "Christmas (GMT+7)"
+    }
+  ],
+  "cc": [
+    {
+      "key": "Indian\/Cocos",
+      "value": "Cocos (GMT+6.5)"
+    }
+  ],
+  "co": [
+    {
+      "key": "America\/Bogota",
+      "value": "Bogota (GMT-5)"
+    }
+  ],
+  "km": [
+    {
+      "key": "Indian\/Comoro",
+      "value": "Comoro (GMT+3)"
+    }
+  ],
+  "ck": [
+    {
+      "key": "Pacific\/Rarotonga",
+      "value": "Rarotonga (GMT-10)"
+    }
+  ],
+  "cr": [
+    {
+      "key": "America\/Costa_Rica",
+      "value": "Costa_Rica (GMT-6)"
+    }
+  ],
+  "hr": [
+    {
+      "key": "Europe\/Zagreb",
+      "value": "Zagreb (GMT+2)"
+    }
+  ],
+  "cu": [
+    {
+      "key": "America\/Havana",
+      "value": "Havana (GMT-4)"
+    }
+  ],
+  "cw": [
+    {
+      "key": "America\/Curacao",
+      "value": "Curacao (GMT-4)"
+    }
+  ],
+  "cy": [
+    {
+      "key": "Asia\/Famagusta",
+      "value": "Famagusta (GMT+3)"
+    },
+    {
+      "key": "Asia\/Nicosia",
+      "value": "Nicosia (GMT+3)"
+    }
+  ],
+  "cz": [
+    {
+      "key": "Europe\/Prague",
+      "value": "Prague (GMT+2)"
+    }
+  ],
+  "cd": [
+    {
+      "key": "Africa\/Kinshasa",
+      "value": "Kinshasa (GMT+1)"
+    },
+    {
+      "key": "Africa\/Lubumbashi",
+      "value": "Lubumbashi (GMT+2)"
+    }
+  ],
+  "dk": [
+    {
+      "key": "Europe\/Copenhagen",
+      "value": "Copenhagen (GMT+2)"
+    }
+  ],
+  "dj": [
+    {
+      "key": "Africa\/Djibouti",
+      "value": "Djibouti (GMT+3)"
+    }
+  ],
+  "dm": [
+    {
+      "key": "America\/Dominica",
+      "value": "Dominica (GMT-4)"
+    }
+  ],
+  "do": [
+    {
+      "key": "America\/Santo_Domingo",
+      "value": "Santo_Domingo (GMT-4)"
+    }
+  ],
+  "tl": [
+    {
+      "key": "Asia\/Dili",
+      "value": "Dili (GMT+9)"
+    }
+  ],
+  "ec": [
+    {
+      "key": "America\/Guayaquil",
+      "value": "Guayaquil (GMT-5)"
+    },
+    {
+      "key": "Pacific\/Galapagos",
+      "value": "Galapagos (GMT-6)"
+    }
+  ],
+  "eg": [
+    {
+      "key": "Africa\/Cairo",
+      "value": "Cairo (GMT+2)"
+    }
+  ],
+  "sv": [
+    {
+      "key": "America\/El_Salvador",
+      "value": "El_Salvador (GMT-6)"
+    }
+  ],
+  "gq": [
+    {
+      "key": "Africa\/Malabo",
+      "value": "Malabo (GMT+1)"
+    }
+  ],
+  "er": [
+    {
+      "key": "Africa\/Asmara",
+      "value": "Asmara (GMT+3)"
+    }
+  ],
+  "ee": [
+    {
+      "key": "Europe\/Tallinn",
+      "value": "Tallinn (GMT+3)"
+    }
+  ],
+  "et": [
+    {
+      "key": "Africa\/Addis_Ababa",
+      "value": "Addis_Ababa (GMT+3)"
+    }
+  ],
+  "fk": [
+    {
+      "key": "Atlantic\/Stanley",
+      "value": "Stanley (GMT-3)"
+    }
+  ],
+  "fo": [
+    {
+      "key": "Atlantic\/Faroe",
+      "value": "Faroe (GMT+1)"
+    }
+  ],
+  "fj": [
+    {
+      "key": "Pacific\/Fiji",
+      "value": "Fiji (GMT+12)"
+    }
+  ],
+  "fi": [
+    {
+      "key": "Europe\/Helsinki",
+      "value": "Helsinki (GMT+3)"
+    }
+  ],
+  "fr": [
+    {
+      "key": "Europe\/Paris",
+      "value": "Paris (GMT+2)"
+    }
+  ],
+  "gf": [
+    {
+      "key": "America\/Cayenne",
+      "value": "Cayenne (GMT-3)"
+    }
+  ],
+  "pf": [
+    {
+      "key": "Pacific\/Gambier",
+      "value": "Gambier (GMT-9)"
+    },
+    {
+      "key": "Pacific\/Marquesas",
+      "value": "Marquesas (GMT-9.5)"
+    },
+    {
+      "key": "Pacific\/Tahiti",
+      "value": "Tahiti (GMT-10)"
+    }
+  ],
+  "tf": [
+    {
+      "key": "Indian\/Kerguelen",
+      "value": "Kerguelen (GMT+5)"
+    }
+  ],
+  "ga": [
+    {
+      "key": "Africa\/Libreville",
+      "value": "Libreville (GMT+1)"
+    }
+  ],
+  "gm": [
+    {
+      "key": "Africa\/Banjul",
+      "value": "Banjul (GMT+0)"
+    }
+  ],
+  "ge": [
+    {
+      "key": "Asia\/Tbilisi",
+      "value": "Tbilisi (GMT+4)"
+    }
+  ],
+  "de": [
+    {
+      "key": "Europe\/Berlin",
+      "value": "Berlin (GMT+2)"
+    },
+    {
+      "key": "Europe\/Busingen",
+      "value": "Busingen (GMT+2)"
+    }
+  ],
+  "gh": [
+    {
+      "key": "Africa\/Accra",
+      "value": "Accra (GMT+0)"
+    }
+  ],
+  "gi": [
+    {
+      "key": "Europe\/Gibraltar",
+      "value": "Gibraltar (GMT+2)"
+    }
+  ],
+  "gr": [
+    {
+      "key": "Europe\/Athens",
+      "value": "Athens (GMT+3)"
+    }
+  ],
+  "gl": [
+    {
+      "key": "America\/Danmarkshavn",
+      "value": "Danmarkshavn (GMT+0)"
+    },
+    {
+      "key": "America\/Godthab",
+      "value": "Godthab (GMT-2)"
+    },
+    {
+      "key": "America\/Scoresbysund",
+      "value": "Scoresbysund (GMT+0)"
+    },
+    {
+      "key": "America\/Thule",
+      "value": "Thule (GMT-3)"
+    }
+  ],
+  "gd": [
+    {
+      "key": "America\/Grenada",
+      "value": "Grenada (GMT-4)"
+    }
+  ],
+  "gp": [
+    {
+      "key": "America\/Guadeloupe",
+      "value": "Guadeloupe (GMT-4)"
+    }
+  ],
+  "gu": [
+    {
+      "key": "Pacific\/Guam",
+      "value": "Guam (GMT+10)"
+    }
+  ],
+  "gt": [
+    {
+      "key": "America\/Guatemala",
+      "value": "Guatemala (GMT-6)"
+    }
+  ],
+  "gg": [
+    {
+      "key": "Europe\/Guernsey",
+      "value": "Guernsey (GMT+1)"
+    }
+  ],
+  "gn": [
+    {
+      "key": "Africa\/Conakry",
+      "value": "Conakry (GMT+0)"
+    }
+  ],
+  "gw": [
+    {
+      "key": "Africa\/Bissau",
+      "value": "Bissau (GMT+0)"
+    }
+  ],
+  "gy": [
+    {
+      "key": "America\/Guyana",
+      "value": "Guyana (GMT-4)"
+    }
+  ],
+  "ht": [
+    {
+      "key": "America\/Port-au-Prince",
+      "value": "Port-au-Prince (GMT-5)"
+    }
+  ],
+  "hn": [
+    {
+      "key": "America\/Tegucigalpa",
+      "value": "Tegucigalpa (GMT-6)"
+    }
+  ],
+  "hk": [
+    {
+      "key": "Asia\/Hong_Kong",
+      "value": "Hong_Kong (GMT+8)"
+    }
+  ],
+  "hu": [
+    {
+      "key": "Europe\/Budapest",
+      "value": "Budapest (GMT+2)"
+    }
+  ],
+  "is": [
+    {
+      "key": "Atlantic\/Reykjavik",
+      "value": "Reykjavik (GMT+0)"
+    }
+  ],
+  "in": [
+    {
+      "key": "Asia\/Kolkata",
+      "value": "Kolkata (GMT+5.5)"
+    }
+  ],
+  "id": [
+    {
+      "key": "Asia\/Jakarta",
+      "value": "Jakarta (GMT+7)"
+    },
+    {
+      "key": "Asia\/Jayapura",
+      "value": "Jayapura (GMT+9)"
+    },
+    {
+      "key": "Asia\/Makassar",
+      "value": "Makassar (GMT+8)"
+    },
+    {
+      "key": "Asia\/Pontianak",
+      "value": "Pontianak (GMT+7)"
+    }
+  ],
+  "ir": [
+    {
+      "key": "Asia\/Tehran",
+      "value": "Tehran (GMT+3.5)"
+    }
+  ],
+  "iq": [
+    {
+      "key": "Asia\/Baghdad",
+      "value": "Baghdad (GMT+3)"
+    }
+  ],
+  "ie": [
+    {
+      "key": "Europe\/Dublin",
+      "value": "Dublin (GMT+1)"
+    }
+  ],
+  "im": [
+    {
+      "key": "Europe\/Isle_of_Man",
+      "value": "Isle_of_Man (GMT+1)"
+    }
+  ],
+  "il": [
+    {
+      "key": "Asia\/Jerusalem",
+      "value": "Jerusalem (GMT+3)"
+    }
+  ],
+  "it": [
+    {
+      "key": "Europe\/Rome",
+      "value": "Rome (GMT+2)"
+    }
+  ],
+  "ci": [
+    {
+      "key": "Africa\/Abidjan",
+      "value": "Abidjan (GMT+0)"
+    }
+  ],
+  "jm": [
+    {
+      "key": "America\/Jamaica",
+      "value": "Jamaica (GMT-5)"
+    }
+  ],
+  "jp": [
+    {
+      "key": "Asia\/Tokyo",
+      "value": "Tokyo (GMT+9)"
+    }
+  ],
+  "je": [
+    {
+      "key": "Europe\/Jersey",
+      "value": "Jersey (GMT+1)"
+    }
+  ],
+  "jo": [
+    {
+      "key": "Asia\/Amman",
+      "value": "Amman (GMT+3)"
+    }
+  ],
+  "kz": [
+    {
+      "key": "Asia\/Almaty",
+      "value": "Almaty (GMT+6)"
+    },
+    {
+      "key": "Asia\/Aqtau",
+      "value": "Aqtau (GMT+5)"
+    },
+    {
+      "key": "Asia\/Aqtobe",
+      "value": "Aqtobe (GMT+5)"
+    },
+    {
+      "key": "Asia\/Atyrau",
+      "value": "Atyrau (GMT+5)"
+    },
+    {
+      "key": "Asia\/Oral",
+      "value": "Oral (GMT+5)"
+    },
+    {
+      "key": "Asia\/Qyzylorda",
+      "value": "Qyzylorda (GMT+6)"
+    }
+  ],
+  "ke": [
+    {
+      "key": "Africa\/Nairobi",
+      "value": "Nairobi (GMT+3)"
+    }
+  ],
+  "ki": [
+    {
+      "key": "Pacific\/Enderbury",
+      "value": "Enderbury (GMT+13)"
+    },
+    {
+      "key": "Pacific\/Kiritimati",
+      "value": "Kiritimati (GMT+14)"
+    },
+    {
+      "key": "Pacific\/Tarawa",
+      "value": "Tarawa (GMT+12)"
+    }
+  ],
+  "kw": [
+    {
+      "key": "Asia\/Kuwait",
+      "value": "Kuwait (GMT+3)"
+    }
+  ],
+  "kg": [
+    {
+      "key": "Asia\/Bishkek",
+      "value": "Bishkek (GMT+6)"
+    }
+  ],
+  "la": [
+    {
+      "key": "Asia\/Vientiane",
+      "value": "Vientiane (GMT+7)"
+    }
+  ],
+  "lv": [
+    {
+      "key": "Europe\/Riga",
+      "value": "Riga (GMT+3)"
+    }
+  ],
+  "lb": [
+    {
+      "key": "Asia\/Beirut",
+      "value": "Beirut (GMT+3)"
+    }
+  ],
+  "ls": [
+    {
+      "key": "Africa\/Maseru",
+      "value": "Maseru (GMT+2)"
+    }
+  ],
+  "lr": [
+    {
+      "key": "Africa\/Monrovia",
+      "value": "Monrovia (GMT+0)"
+    }
+  ],
+  "ly": [
+    {
+      "key": "Africa\/Tripoli",
+      "value": "Tripoli (GMT+2)"
+    }
+  ],
+  "li": [
+    {
+      "key": "Europe\/Vaduz",
+      "value": "Vaduz (GMT+2)"
+    }
+  ],
+  "lt": [
+    {
+      "key": "Europe\/Vilnius",
+      "value": "Vilnius (GMT+3)"
+    }
+  ],
+  "lu": [
+    {
+      "key": "Europe\/Luxembourg",
+      "value": "Luxembourg (GMT+2)"
+    }
+  ],
+  "mo": [
+    {
+      "key": "Asia\/Macau",
+      "value": "Macau (GMT+8)"
+    }
+  ],
+  "mk": [
+    {
+      "key": "Europe\/Skopje",
+      "value": "Skopje (GMT+2)"
+    }
+  ],
+  "mg": [
+    {
+      "key": "Indian\/Antananarivo",
+      "value": "Antananarivo (GMT+3)"
+    }
+  ],
+  "mw": [
+    {
+      "key": "Africa\/Blantyre",
+      "value": "Blantyre (GMT+2)"
+    }
+  ],
+  "my": [
+    {
+      "key": "Asia\/Kuala_Lumpur",
+      "value": "Kuala_Lumpur (GMT+8)"
+    },
+    {
+      "key": "Asia\/Kuching",
+      "value": "Kuching (GMT+8)"
+    }
+  ],
+  "mv": [
+    {
+      "key": "Indian\/Maldives",
+      "value": "Maldives (GMT+5)"
+    }
+  ],
+  "ml": [
+    {
+      "key": "Africa\/Bamako",
+      "value": "Bamako (GMT+0)"
+    }
+  ],
+  "mt": [
+    {
+      "key": "Europe\/Malta",
+      "value": "Malta (GMT+2)"
+    }
+  ],
+  "mh": [
+    {
+      "key": "Pacific\/Kwajalein",
+      "value": "Kwajalein (GMT+12)"
+    },
+    {
+      "key": "Pacific\/Majuro",
+      "value": "Majuro (GMT+12)"
+    }
+  ],
+  "mq": [
+    {
+      "key": "America\/Martinique",
+      "value": "Martinique (GMT-4)"
+    }
+  ],
+  "mr": [
+    {
+      "key": "Africa\/Nouakchott",
+      "value": "Nouakchott (GMT+0)"
+    }
+  ],
+  "mu": [
+    {
+      "key": "Indian\/Mauritius",
+      "value": "Mauritius (GMT+4)"
+    }
+  ],
+  "yt": [
+    {
+      "key": "Indian\/Mayotte",
+      "value": "Mayotte (GMT+3)"
+    }
+  ],
+  "mx": [
+    {
+      "key": "America\/Bahia_Banderas",
+      "value": "Bahia_Banderas (GMT-5)"
+    },
+    {
+      "key": "America\/Cancun",
+      "value": "Cancun (GMT-5)"
+    },
+    {
+      "key": "America\/Chihuahua",
+      "value": "Chihuahua (GMT-6)"
+    },
+    {
+      "key": "America\/Hermosillo",
+      "value": "Hermosillo (GMT-7)"
+    },
+    {
+      "key": "America\/Matamoros",
+      "value": "Matamoros (GMT-5)"
+    },
+    {
+      "key": "America\/Mazatlan",
+      "value": "Mazatlan (GMT-6)"
+    },
+    {
+      "key": "America\/Merida",
+      "value": "Merida (GMT-5)"
+    },
+    {
+      "key": "America\/Mexico_City",
+      "value": "Mexico_City (GMT-5)"
+    },
+    {
+      "key": "America\/Monterrey",
+      "value": "Monterrey (GMT-5)"
+    },
+    {
+      "key": "America\/Ojinaga",
+      "value": "Ojinaga (GMT-6)"
+    },
+    {
+      "key": "America\/Tijuana",
+      "value": "Tijuana (GMT-7)"
+    }
+  ],
+  "fm": [
+    {
+      "key": "Pacific\/Chuuk",
+      "value": "Chuuk (GMT+10)"
+    },
+    {
+      "key": "Pacific\/Kosrae",
+      "value": "Kosrae (GMT+11)"
+    },
+    {
+      "key": "Pacific\/Pohnpei",
+      "value": "Pohnpei (GMT+11)"
+    }
+  ],
+  "md": [
+    {
+      "key": "Europe\/Chisinau",
+      "value": "Chisinau (GMT+3)"
+    }
+  ],
+  "mc": [
+    {
+      "key": "Europe\/Monaco",
+      "value": "Monaco (GMT+2)"
+    }
+  ],
+  "mn": [
+    {
+      "key": "Asia\/Choibalsan",
+      "value": "Choibalsan (GMT+8)"
+    },
+    {
+      "key": "Asia\/Hovd",
+      "value": "Hovd (GMT+7)"
+    },
+    {
+      "key": "Asia\/Ulaanbaatar",
+      "value": "Ulaanbaatar (GMT+8)"
+    }
+  ],
+  "me": [
+    {
+      "key": "Europe\/Podgorica",
+      "value": "Podgorica (GMT+2)"
+    }
+  ],
+  "ms": [
+    {
+      "key": "America\/Montserrat",
+      "value": "Montserrat (GMT-4)"
+    }
+  ],
+  "ma": [
+    {
+      "key": "Africa\/Casablanca",
+      "value": "Casablanca (GMT+1)"
+    }
+  ],
+  "mz": [
+    {
+      "key": "Africa\/Maputo",
+      "value": "Maputo (GMT+2)"
+    }
+  ],
+  "mm": [
+    {
+      "key": "Asia\/Yangon",
+      "value": "Yangon (GMT+6.5)"
+    }
+  ],
+  "na": [
+    {
+      "key": "Africa\/Windhoek",
+      "value": "Windhoek (GMT+2)"
+    }
+  ],
+  "nr": [
+    {
+      "key": "Pacific\/Nauru",
+      "value": "Nauru (GMT+12)"
+    }
+  ],
+  "np": [
+    {
+      "key": "Asia\/Kathmandu",
+      "value": "Kathmandu (GMT+5.75)"
+    }
+  ],
+  "nl": [
+    {
+      "key": "Europe\/Amsterdam",
+      "value": "Amsterdam (GMT+2)"
+    }
+  ],
+  "nc": [
+    {
+      "key": "Pacific\/Noumea",
+      "value": "Noumea (GMT+11)"
+    }
+  ],
+  "nz": [
+    {
+      "key": "Pacific\/Auckland",
+      "value": "Auckland (GMT+13)"
+    },
+    {
+      "key": "Pacific\/Chatham",
+      "value": "Chatham (GMT+13.75)"
+    }
+  ],
+  "ni": [
+    {
+      "key": "America\/Managua",
+      "value": "Managua (GMT-6)"
+    }
+  ],
+  "ne": [
+    {
+      "key": "Africa\/Niamey",
+      "value": "Niamey (GMT+1)"
+    }
+  ],
+  "ng": [
+    {
+      "key": "Africa\/Lagos",
+      "value": "Lagos (GMT+1)"
+    }
+  ],
+  "nu": [
+    {
+      "key": "Pacific\/Niue",
+      "value": "Niue (GMT-11)"
+    }
+  ],
+  "nf": [
+    {
+      "key": "Pacific\/Norfolk",
+      "value": "Norfolk (GMT+11)"
+    }
+  ],
+  "kp": [
+    {
+      "key": "Asia\/Pyongyang",
+      "value": "Pyongyang (GMT+8.5)"
+    }
+  ],
+  "mp": [
+    {
+      "key": "Pacific\/Saipan",
+      "value": "Saipan (GMT+10)"
+    }
+  ],
+  "no": [
+    {
+      "key": "Europe\/Oslo",
+      "value": "Oslo (GMT+2)"
+    }
+  ],
+  "om": [
+    {
+      "key": "Asia\/Muscat",
+      "value": "Muscat (GMT+4)"
+    }
+  ],
+  "pk": [
+    {
+      "key": "Asia\/Karachi",
+      "value": "Karachi (GMT+5)"
+    }
+  ],
+  "pw": [
+    {
+      "key": "Pacific\/Palau",
+      "value": "Palau (GMT+9)"
+    }
+  ],
+  "ps": [
+    {
+      "key": "Asia\/Gaza",
+      "value": "Gaza (GMT+3)"
+    },
+    {
+      "key": "Asia\/Hebron",
+      "value": "Hebron (GMT+3)"
+    }
+  ],
+  "pa": [
+    {
+      "key": "America\/Panama",
+      "value": "Panama (GMT-5)"
+    }
+  ],
+  "pg": [
+    {
+      "key": "Pacific\/Bougainville",
+      "value": "Bougainville (GMT+11)"
+    },
+    {
+      "key": "Pacific\/Port_Moresby",
+      "value": "Port_Moresby (GMT+10)"
+    }
+  ],
+  "py": [
+    {
+      "key": "America\/Asuncion",
+      "value": "Asuncion (GMT-3)"
+    }
+  ],
+  "pe": [
+    {
+      "key": "America\/Lima",
+      "value": "Lima (GMT-5)"
+    }
+  ],
+  "ph": [
+    {
+      "key": "Asia\/Manila",
+      "value": "Manila (GMT+8)"
+    }
+  ],
+  "pn": [
+    {
+      "key": "Pacific\/Pitcairn",
+      "value": "Pitcairn (GMT-8)"
+    }
+  ],
+  "pl": [
+    {
+      "key": "Europe\/Warsaw",
+      "value": "Warsaw (GMT+2)"
+    }
+  ],
+  "pt": [
+    {
+      "key": "Atlantic\/Azores",
+      "value": "Azores (GMT+0)"
+    },
+    {
+      "key": "Atlantic\/Madeira",
+      "value": "Madeira (GMT+1)"
+    },
+    {
+      "key": "Europe\/Lisbon",
+      "value": "Lisbon (GMT+1)"
+    }
+  ],
+  "pr": [
+    {
+      "key": "America\/Puerto_Rico",
+      "value": "Puerto_Rico (GMT-4)"
+    }
+  ],
+  "qa": [
+    {
+      "key": "Asia\/Qatar",
+      "value": "Qatar (GMT+3)"
+    }
+  ],
+  "cg": [
+    {
+      "key": "Africa\/Brazzaville",
+      "value": "Brazzaville (GMT+1)"
+    }
+  ],
+  "ro": [
+    {
+      "key": "Europe\/Bucharest",
+      "value": "Bucharest (GMT+3)"
+    }
+  ],
+  "ru": [
+    {
+      "key": "Asia\/Anadyr",
+      "value": "Anadyr (GMT+12)"
+    },
+    {
+      "key": "Asia\/Barnaul",
+      "value": "Barnaul (GMT+7)"
+    },
+    {
+      "key": "Asia\/Chita",
+      "value": "Chita (GMT+9)"
+    },
+    {
+      "key": "Asia\/Irkutsk",
+      "value": "Irkutsk (GMT+8)"
+    },
+    {
+      "key": "Asia\/Kamchatka",
+      "value": "Kamchatka (GMT+12)"
+    },
+    {
+      "key": "Asia\/Khandyga",
+      "value": "Khandyga (GMT+9)"
+    },
+    {
+      "key": "Asia\/Krasnoyarsk",
+      "value": "Krasnoyarsk (GMT+7)"
+    },
+    {
+      "key": "Asia\/Magadan",
+      "value": "Magadan (GMT+11)"
+    },
+    {
+      "key": "Asia\/Novokuznetsk",
+      "value": "Novokuznetsk (GMT+7)"
+    },
+    {
+      "key": "Asia\/Novosibirsk",
+      "value": "Novosibirsk (GMT+7)"
+    },
+    {
+      "key": "Asia\/Omsk",
+      "value": "Omsk (GMT+6)"
+    },
+    {
+      "key": "Asia\/Sakhalin",
+      "value": "Sakhalin (GMT+11)"
+    },
+    {
+      "key": "Asia\/Srednekolymsk",
+      "value": "Srednekolymsk (GMT+11)"
+    },
+    {
+      "key": "Asia\/Tomsk",
+      "value": "Tomsk (GMT+7)"
+    },
+    {
+      "key": "Asia\/Ust-Nera",
+      "value": "Ust-Nera (GMT+10)"
+    },
+    {
+      "key": "Asia\/Vladivostok",
+      "value": "Vladivostok (GMT+10)"
+    },
+    {
+      "key": "Asia\/Yakutsk",
+      "value": "Yakutsk (GMT+9)"
+    },
+    {
+      "key": "Asia\/Yekaterinburg",
+      "value": "Yekaterinburg (GMT+5)"
+    },
+    {
+      "key": "Europe\/Astrakhan",
+      "value": "Astrakhan (GMT+4)"
+    },
+    {
+      "key": "Europe\/Kaliningrad",
+      "value": "Kaliningrad (GMT+2)"
+    },
+    {
+      "key": "Europe\/Kirov",
+      "value": "Kirov (GMT+3)"
+    },
+    {
+      "key": "Europe\/Moscow",
+      "value": "Moscow (GMT+3)"
+    },
+    {
+      "key": "Europe\/Samara",
+      "value": "Samara (GMT+4)"
+    },
+    {
+      "key": "Europe\/Saratov",
+      "value": "Saratov (GMT+4)"
+    },
+    {
+      "key": "Europe\/Simferopol",
+      "value": "Simferopol (GMT+3)"
+    },
+    {
+      "key": "Europe\/Ulyanovsk",
+      "value": "Ulyanovsk (GMT+4)"
+    },
+    {
+      "key": "Europe\/Volgograd",
+      "value": "Volgograd (GMT+3)"
+    }
+  ],
+  "rw": [
+    {
+      "key": "Africa\/Kigali",
+      "value": "Kigali (GMT+2)"
+    }
+  ],
+  "re": [
+    {
+      "key": "Indian\/Reunion",
+      "value": "Reunion (GMT+4)"
+    }
+  ],
+  "bl": [
+    {
+      "key": "America\/St_Barthelemy",
+      "value": "St_Barthelemy (GMT-4)"
+    }
+  ],
+  "sh": [
+    {
+      "key": "Atlantic\/St_Helena",
+      "value": "St_Helena (GMT+0)"
+    }
+  ],
+  "kn": [
+    {
+      "key": "America\/St_Kitts",
+      "value": "St_Kitts (GMT-4)"
+    }
+  ],
+  "lc": [
+    {
+      "key": "America\/St_Lucia",
+      "value": "St_Lucia (GMT-4)"
+    }
+  ],
+  "mf": [
+    {
+      "key": "America\/Marigot",
+      "value": "Marigot (GMT-4)"
+    }
+  ],
+  "pm": [
+    {
+      "key": "America\/Miquelon",
+      "value": "Miquelon (GMT-2)"
+    }
+  ],
+  "vc": [
+    {
+      "key": "America\/St_Vincent",
+      "value": "St_Vincent (GMT-4)"
+    }
+  ],
+  "ws": [
+    {
+      "key": "Pacific\/Apia",
+      "value": "Apia (GMT+14)"
+    }
+  ],
+  "sm": [
+    {
+      "key": "Europe\/San_Marino",
+      "value": "San_Marino (GMT+2)"
+    }
+  ],
+  "sa": [
+    {
+      "key": "Asia\/Riyadh",
+      "value": "Riyadh (GMT+3)"
+    }
+  ],
+  "sn": [
+    {
+      "key": "Africa\/Dakar",
+      "value": "Dakar (GMT+0)"
+    }
+  ],
+  "rs": [
+    {
+      "key": "Europe\/Belgrade",
+      "value": "Belgrade (GMT+2)"
+    }
+  ],
+  "sc": [
+    {
+      "key": "Indian\/Mahe",
+      "value": "Mahe (GMT+4)"
+    }
+  ],
+  "sl": [
+    {
+      "key": "Africa\/Freetown",
+      "value": "Freetown (GMT+0)"
+    }
+  ],
+  "sg": [
+    {
+      "key": "Asia\/Singapore",
+      "value": "Singapore (GMT+8)"
+    }
+  ],
+  "sx": [
+    {
+      "key": "America\/Lower_Princes",
+      "value": "Lower_Princes (GMT-4)"
+    }
+  ],
+  "sk": [
+    {
+      "key": "Europe\/Bratislava",
+      "value": "Bratislava (GMT+2)"
+    }
+  ],
+  "si": [
+    {
+      "key": "Europe\/Ljubljana",
+      "value": "Ljubljana (GMT+2)"
+    }
+  ],
+  "sb": [
+    {
+      "key": "Pacific\/Guadalcanal",
+      "value": "Guadalcanal (GMT+11)"
+    }
+  ],
+  "so": [
+    {
+      "key": "Africa\/Mogadishu",
+      "value": "Mogadishu (GMT+3)"
+    }
+  ],
+  "za": [
+    {
+      "key": "Africa\/Johannesburg",
+      "value": "Johannesburg (GMT+2)"
+    }
+  ],
+  "gs": [
+    {
+      "key": "Atlantic\/South_Georgia",
+      "value": "South_Georgia (GMT-2)"
+    }
+  ],
+  "kr": [
+    {
+      "key": "Asia\/Seoul",
+      "value": "Seoul (GMT+9)"
+    }
+  ],
+  "ss": [
+    {
+      "key": "Africa\/Juba",
+      "value": "Juba (GMT+3)"
+    }
+  ],
+  "es": [
+    {
+      "key": "Africa\/Ceuta",
+      "value": "Ceuta (GMT+2)"
+    },
+    {
+      "key": "Atlantic\/Canary",
+      "value": "Canary (GMT+1)"
+    },
+    {
+      "key": "Europe\/Madrid",
+      "value": "Madrid (GMT+2)"
+    }
+  ],
+  "lk": [
+    {
+      "key": "Asia\/Colombo",
+      "value": "Colombo (GMT+5.5)"
+    }
+  ],
+  "sd": [
+    {
+      "key": "Africa\/Khartoum",
+      "value": "Khartoum (GMT+3)"
+    }
+  ],
+  "sr": [
+    {
+      "key": "America\/Paramaribo",
+      "value": "Paramaribo (GMT-3)"
+    }
+  ],
+  "sj": [
+    {
+      "key": "Arctic\/Longyearbyen",
+      "value": "Longyearbyen (GMT+2)"
+    }
+  ],
+  "sz": [
+    {
+      "key": "Africa\/Mbabane",
+      "value": "Mbabane (GMT+2)"
+    }
+  ],
+  "se": [
+    {
+      "key": "Europe\/Stockholm",
+      "value": "Stockholm (GMT+2)"
+    }
+  ],
+  "ch": [
+    {
+      "key": "Europe\/Zurich",
+      "value": "Zurich (GMT+2)"
+    }
+  ],
+  "sy": [
+    {
+      "key": "Asia\/Damascus",
+      "value": "Damascus (GMT+3)"
+    }
+  ],
+  "st": [
+    {
+      "key": "Africa\/Sao_Tome",
+      "value": "Sao_Tome (GMT+0)"
+    }
+  ],
+  "tw": [
+    {
+      "key": "Asia\/Taipei",
+      "value": "Taipei (GMT+8)"
+    }
+  ],
+  "tj": [
+    {
+      "key": "Asia\/Dushanbe",
+      "value": "Dushanbe (GMT+5)"
+    }
+  ],
+  "tz": [
+    {
+      "key": "Africa\/Dar_es_Salaam",
+      "value": "Dar_es_Salaam (GMT+3)"
+    }
+  ],
+  "th": [
+    {
+      "key": "Asia\/Bangkok",
+      "value": "Bangkok (GMT+7)"
+    }
+  ],
+  "tg": [
+    {
+      "key": "Africa\/Lome",
+      "value": "Lome (GMT+0)"
+    }
+  ],
+  "tk": [
+    {
+      "key": "Pacific\/Fakaofo",
+      "value": "Fakaofo (GMT+13)"
+    }
+  ],
+  "to": [
+    {
+      "key": "Pacific\/Tongatapu",
+      "value": "Tongatapu (GMT+13)"
+    }
+  ],
+  "tt": [
+    {
+      "key": "America\/Port_of_Spain",
+      "value": "Port_of_Spain (GMT-4)"
+    }
+  ],
+  "tn": [
+    {
+      "key": "Africa\/Tunis",
+      "value": "Tunis (GMT+1)"
+    }
+  ],
+  "tr": [
+    {
+      "key": "Europe\/Istanbul",
+      "value": "Istanbul (GMT+3)"
+    }
+  ],
+  "tm": [
+    {
+      "key": "Asia\/Ashgabat",
+      "value": "Ashgabat (GMT+5)"
+    }
+  ],
+  "tc": [
+    {
+      "key": "America\/Grand_Turk",
+      "value": "Grand_Turk (GMT-4)"
+    }
+  ],
+  "tv": [
+    {
+      "key": "Pacific\/Funafuti",
+      "value": "Funafuti (GMT+12)"
+    }
+  ],
+  "um": [
+    {
+      "key": "Pacific\/Johnston",
+      "value": "Johnston (GMT-10)"
+    },
+    {
+      "key": "Pacific\/Midway",
+      "value": "Midway (GMT-11)"
+    },
+    {
+      "key": "Pacific\/Wake",
+      "value": "Wake (GMT+12)"
+    }
+  ],
+  "vi": [
+    {
+      "key": "America\/St_Thomas",
+      "value": "St_Thomas (GMT-4)"
+    }
+  ],
+  "ug": [
+    {
+      "key": "Africa\/Kampala",
+      "value": "Kampala (GMT+3)"
+    }
+  ],
+  "ua": [
+    {
+      "key": "Europe\/Kiev",
+      "value": "Kiev (GMT+3)"
+    },
+    {
+      "key": "Europe\/Uzhgorod",
+      "value": "Uzhgorod (GMT+3)"
+    },
+    {
+      "key": "Europe\/Zaporozhye",
+      "value": "Zaporozhye (GMT+3)"
+    }
+  ],
+  "ae": [
+    {
+      "key": "Asia\/Dubai",
+      "value": "Dubai (GMT+4)"
+    }
+  ],
+  "gb": [
+    {
+      "key": "Europe\/London",
+      "value": "London (GMT+1)"
+    }
+  ],
+  "us": [
+    {
+      "key": "America\/New_York",
+      "value": "Eastern Standard Time (EST)"
+    },
+    {
+      "key": "America\/Chicago",
+      "value": "Central Standard Time (CST)"
+    },
+    {
+      "key": "America\/Denver",
+      "value": "Mountain Standard Time (MST)"
+    },
+    {
+      "key": "America\/Phoenix",
+      "value": "Mountain Standard Time (MST no DST)"
+    },
+    {
+      "key": "America\/Los_Angeles",
+      "value": "Pacific Standard Time (PST)"
+    },
+    {
+      "key": "America\/Anchorage",
+      "value": "Alaska Standard Time (AKST)"
+    },
+    {
+      "key": "America\/Adak",
+      "value": "Hawaii-Aleutian Standard Time (HAST)"
+    },
+    {
+      "key": "Pacific\/Honolulu",
+      "value": "Hawaii-Aleutian Standard Time (HAST no DST)"
+    }
+  ],
+  "uy": [
+    {
+      "key": "America\/Montevideo",
+      "value": "Montevideo (GMT-3)"
+    }
+  ],
+  "uz": [
+    {
+      "key": "Asia\/Samarkand",
+      "value": "Samarkand (GMT+5)"
+    },
+    {
+      "key": "Asia\/Tashkent",
+      "value": "Tashkent (GMT+5)"
+    }
+  ],
+  "vu": [
+    {
+      "key": "Pacific\/Efate",
+      "value": "Efate (GMT+11)"
+    }
+  ],
+  "va": [
+    {
+      "key": "Europe\/Vatican",
+      "value": "Vatican (GMT+2)"
+    }
+  ],
+  "ve": [
+    {
+      "key": "America\/Caracas",
+      "value": "Caracas (GMT-4)"
+    }
+  ],
+  "vn": [
+    {
+      "key": "Asia\/Ho_Chi_Minh",
+      "value": "Ho_Chi_Minh (GMT+7)"
+    }
+  ],
+  "wf": [
+    {
+      "key": "Pacific\/Wallis",
+      "value": "Wallis (GMT+12)"
+    }
+  ],
+  "eh": [
+    {
+      "key": "Africa\/El_Aaiun",
+      "value": "El_Aaiun (GMT+1)"
+    }
+  ],
+  "ye": [
+    {
+      "key": "Asia\/Aden",
+      "value": "Aden (GMT+3)"
+    }
+  ],
+  "zm": [
+    {
+      "key": "Africa\/Lusaka",
+      "value": "Lusaka (GMT+2)"
+    }
+  ],
+  "zw": [
+    {
+      "key": "Africa\/Harare",
+      "value": "Harare (GMT+2)"
+    }
+  ],
+  "ax": [
+    {
+      "key": "Europe\/Mariehamn",
+      "value": "Mariehamn (GMT+3)"
+    }
+  ]
+}

@@ -13,7 +13,7 @@ import { Http } from '@angular/http';
 export class RegistrationFormProvider {
   private _email = '';
   private _registrationForm: FormGroup;
-
+  private DOMAIN_REGEX = /^([a-zA-Z0-9\-_]\.[a-zA-Z0-9\-_])+/
   constructor(private fb: FormBuilder, private http: Http) {
     this.buildForm();
   }
@@ -22,32 +22,22 @@ export class RegistrationFormProvider {
     return this._registrationForm;
   }
 
-  public domainValidator(control: AbstractControl) {
-    // TODO remove thid mock
-    return new Promise((res, rej) => {
-      console.log(`start mock fetchin data for domain ${control.value}`);
-      setTimeout(() => {
-        console.log(`mock fetching complete for ${control.value}`);
-        if (/^[a-dA-D]/.test(control.value)) {
-          res(true);
-        }
-        else res({domain: true}); // tslint:disable-line
-      }, 2000);
-    });
+  public isDomainIsAviable(control: AbstractControl) {
+    // TODO async domain check
   }
 
-// TODO add validator to companyName (checkdomain in registrationProvider)
+
   private buildForm() {
     this._registrationForm = this.fb.group({
       'name': ['', [Validators.required, Validators.minLength(8)]],
       'email': ['', Validators.email],
       'password': ['', [Validators.required, Validators.minLength(8)]],
       'companyName': ['', Validators.required],
-      'domain': ['', Validators.required, this.domainValidator],
+      'domain': ['', [Validators.required, /*Validators.pattern(this.DOMAIN_REGEX)*/],],
       'country': ['', Validators.required],
       'timeZone': ['', Validators.required],
-      'businessSector': ['', Validators.required],
-      'website': ['', Validators.required],
+      'businessSector': [''],
+      'website': [''],
     });
   }
 }

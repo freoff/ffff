@@ -1,32 +1,47 @@
 <div class="form-group" [formGroup]="registrationForm">
-  <label [for]="myControlName" class="field-require text-uppercase">
-    Name {{controlObject.value}}
+  <label [for]="myControlName"
+         class="text-uppercase"
+         [ngClass]="{'field-require': fieldRequire}"
+  >
+
+    {{ label }}
   </label>
-  <div class="input-area">
+  <div class="input-area"
+       [ngClass]="{
+        valid: controlObject.valid && controlObject.touched,
+        invalid: controlObject.invalid && controlObject.touched
+       }"
+  >
     <input [id]="myControlName"
            [name]="myControlName"
            [type]="inputType"
            class="form-control"
            [placeholder]="placeholder"
            [formControlName]="myControlName"
-           [ngClass]="{'field-require': require}"
+           [value]="value"
            (blur)="onBlur($event)"
+           (keyup)="onKeyPress($event)"
     >
-    <div class="icon-area">
-      <span>{{customText}}</span>
-      <span  *ngIf="controlObject.valid && controlObject.touched"
-             class="fa fa-check icon-valid">
 
-      </span>
-      <span *ngIf="controlObject.invalid && controlObject.touched"
-            class="fa fa-times icon-invalid">
-
-      </span>
-    </div>
-
-
+    <span *ngIf="showCustomText" class="custom-tekst">{{customText}}</span>
+    <span *ngIf="controlObject.valid && controlObject.touched"
+          class="fa fa-check icon-valid">
+    </span>
+    <span *ngIf="controlObject.invalid && controlObject.touched"
+          class="fa fa-times icon-invalid">
+    </span>
   </div>
   <div class="error-area">
-    <app-error-displayer [appFieldName]="myControlName"></app-error-displayer>
+    <app-error-displayer [appFieldName]="myControlName"
+                         emRequired="Field is required" i18n-emRequired
+                         emEmail="Email is incorrect" i18n-emEmail
+                         emMinLength="Minimal length is" i18n-emMinLength
+                         emMax="This is to long, max length is" i18n-emMax
+                         emMin="Error, minimal is" i18n-emMin
+                         emDomainNotAviable="This url is not aviable" i18n-emDomainNotAviable
+                         emDomainIncorrect="This url is incorrect" i18n-emDomainIncorrect
+                         emDefault="Field has error" i18n-emDefault
+    >
+    </app-error-displayer>
   </div>
 </div>

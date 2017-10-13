@@ -40,9 +40,9 @@ button {
   top:.2rem;
 
 }
-.error {
-  border-bottom-color: darkred !important;
-}
+/*.error {*/
+  /*border-bottom-color: darkred !important;*/
+/*}*/
 .error + label {
   font-size: .6rem;
   color: darkred !important;
@@ -56,9 +56,9 @@ button {
   transition: all .4s ease-in;
   text-transform: uppercase;
 }
-.show-error{
-  opacity: 1;
-}
+/*.show-error{*/
+  /*opacity: 1;*/
+/*}*/
 .card-header {
   background-color: rgba(231, 127, 29, .5);
 }

@@ -1,0 +1,17 @@
+<app-vcinput myControlName="companyName"
+             placeholder="Add Your Company Name Here"
+             [fieldRequire]="true"
+             label="Company Name"
+             (valueChange)="onValueChangeCompanyName($event)"
+             (onBlur)="validateDomain()"
+></app-vcinput>
+
+<app-vcinput myControlName="domain"
+             placeholder="hilton-hotel"
+             customText=".vouchercart.com"
+             [fieldRequire]="true"
+             label="The url of your shop onvouchercart"
+             [value]="domainFromCompanyName"
+             (valueChange)="onValueChangeDomain($event)"
+></app-vcinput>
+

@@ -21,14 +21,14 @@
 <div class="row m-2 justify-content-center">
   <div class="d-flex col-md-8  flex-column flex-sm-row">
     <div id="md" class="d-flex flex-column w-100 dropdown mr-md-3">
-      <input #email id="email" type="email"
+      <input #email id="email"
              [ngClass]="{error: toched && !emailIsValid}"
              [attr.data-toched]="toched ? '' : null"
              (keyup)="validateEmail($event)"
              (blur)="exitFromInput()"
              class="form-control" type="text" name="email">
       <label for="email" required>Email</label>
-      <p class="mt-2" [ngClass]="{'show-error': !hideErorMag }" class="error-msg">
+      <p [ngClass]="{'show-error': !hideErorMag }" class="mt-2 error-msg">
         Błędny adres email
       </p>
     </div>

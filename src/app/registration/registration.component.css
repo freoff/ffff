@@ -1,16 +1,32 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
+
 .content {
-  margin:1rem 3rem 1rem;
+  margin: 1rem 3rem 1rem;
 }
-.title  {
+
+@media (max-width: 420px) {
+  .content {
+    margin: .5rem 2px;
+  }
+}
+
+.title {
 
   color: #333333;
-  font-family: Poppins;
-  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.1rem;
   font-weight: 600;
-  line-height: 62px;
 }
 
+.subtitle-prefix {
+  font-family: 'Hind', sans-serif;
+  color: #333333;
+  font-family: Hind;
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 2.2rem;
+  text-align: center;
+}
 
 .wrapper {
   height: 100%;
@@ -19,16 +35,12 @@
   align-items: center;
   font-size: 10px;
 }
+
 .registration-main {
   background-color: #f7f7f7;
   margin: auto;
   margin-top: 2rem;
 }
-.registration-app-window {
-  margin:1.3rem;
-  border: 1px solid silver;
-}
-
 
 input, select {
   border-color: #d8d8d8;
@@ -37,27 +49,20 @@ input, select {
 
 button {
   background-color: #e77f1d;
-  border-color: #fff;
-  border: solid 2px;
+  border: none;
+  outline: none;
+
 }
 
 button:hover {
   background-color: #e76416;
-  border: 0;
+  border: none;
+  outline: none;
 }
+
 button:disabled {
   background-color: #ecaa00;
   border: 0;
-}
-
-
-
-.right {
-  height: 800px;
-  background-image: url('../../assets/bgI.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
 }
 
 .social {
@@ -95,10 +100,6 @@ form > div {
   order: 10;
 }
 
-.first-item {
-  order: 1 !important;
-}
-
 .field-require:after {
   content: '*';
   color: darkred;
@@ -110,7 +111,6 @@ form > div {
   font-size: .8rem;
   text-decoration: none;
 }
-
 
 /*_________________________________________________________________________*/
 /*.ng-pristine.ng-invalid.ng-touched ~ label {*/

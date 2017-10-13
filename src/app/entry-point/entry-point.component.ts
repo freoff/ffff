@@ -1,6 +1,13 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
-import * as isemail from 'isemail';
+
+
+const isemail = {
+  validate: (value: string) => {
+    const EMAIL_REGEXP = /^(?=.{1,254}$)(?=.{1,64}@)[-!#$%&'*+/0-9=?A-Z^_`a-z{|}~]+(\.[-!#$%&'*+/0-9=?A-Z^_`a-z{|}~]+)*@[A-Za-z0-9]([A-Za-z0-9-]{0,61}[A-Za-z0-9])?(\.[A-Za-z0-9]([A-Za-z0-9-]{0,61}[A-Za-z0-9])?)*$/; // tslint:disable-line
+    return EMAIL_REGEXP.test(value);
+  }
+};
 
 @Component({
   selector: 'app-entry-point',
@@ -41,7 +48,7 @@ export class EntryPointComponent implements OnInit {
     }
   }
 
-  exitFromInput(ev: KeyboardEvent) {
+  exitFromInput() {
     this.toched = true;
     this.hideErorMag = this.emailIsValid;
 

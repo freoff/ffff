@@ -1,5 +1,5 @@
 <p>{{registrationForm.value | json}}</p>
-<h2 class="mt-4 text-center text-uppercase">
+<h2 class="mt-4 text-center text-uppercase title">
   TELL US MORE
 </h2> <h5 class="text-center">About: <span>{{registrationForm.get('companyName').value}}</span></h5>
 <form [formGroup]="registrationForm">
@@ -7,37 +7,35 @@
     <label for="country" class="field-require text-uppercase">
       Country:
     </label>
-    <select name="country" id="country" class="form-control" formControlName="country">
-      <option disabled selected value> -- start type eg. US --</option>
+    <select  name="country" id="country" class="form-control" formControlName="country">
+
       <option *ngFor="let country of countryList"
               [value]="country.code">
-        {{ country.code }} | {{ country.name }}
+        {{ country.code }} - {{ country.name }}
       </option>
 
     </select>
   </div>
   <div class="form-group">
-    <label class="field-require" for="timeZone">TIMEZONE</label>
+    <label class="field-require" for="timeZone">TIMEZONE </label>
 
-    <select name="timeZone"
-            id="timeZone"
-            class="form-control"
-            formControlName="timeZone">
-      <option disabled selected value> -- select an option --</option>
-      <option value="1">Zone 1</option>
-      <option value="2">Zone 2</option>
-      <option value="3">Zone 3</option>
-      <option value="4">Zone 4</option>
-      <option value="5">Zone 5</option>
-      <option value="6">Zone 6</option>
-      <option value="7">Zone 7</option>
-      <option value="8">Zone 8</option>
-      <option value="9">Zone 9</option>
-      <option value="10">Zone 10</option>
-    </select>
+    <div class="select-area">
+      <select id="timeZone"
+              class="form-control"
+              formControlName="timeZone"
+
+      >
+        <option value="" selected disabled hidden > -- select an option -- </option>
+        <option *ngFor="let zone of allZone"
+                [value]="zone.key"
+        >
+          {{ zone.key }} - {{ zone.value}}
+        </option>
+      </select>
+    </div>
   </div>
   <div class="form-group">
-    <label class="field-require" for="businessSector">BUSINESS SECTOR:</label>
+    <label for="businessSector">BUSINESS SECTOR:</label>
     <select name="businessSector"
             id="businessSector"
             class="form-control"
@@ -45,28 +43,18 @@
     >
       <option disabled selected value> -- select an option --</option>
       <option value="1">B Sector 1</option>
-      <option value="2">B Sector 2</option>
-      <option value="3">B Sector 3</option>
-      <option value="4">B Sector 4</option>
-      <option value="5">B Sector 5</option>
-      <option value="6">B Sector 6</option>
-      <option value="7">B Sector 7</option>
-      <option value="8">B Sector 8</option>
-      <option value="9">B Sector 9</option>
-      <option value="10">B Sector 10</option>
+
     </select>
   </div>
-  <div class="form-group">
-    <label for="website" class="field-require text-uppercase">
-      add your business website
-    </label>
-    <input id="website"
-           name="website"
-           type="text"
-           class="form-control"
-           placeholder="eg: www.some.business.com"
-           formControlName="website">
-  </div>
+  <app-vcinput inputType="text"
+               label="add your business website url" i18n-label
+               myControlName="website"
+               placeholder="eg: www.some.business.com"
+               [fieldRequire]="false"
+
+  >
+  </app-vcinput>
+
   <div class="d-flex  align-items-start flex-wrap">
     <p class="mr-auto" id="footer-signin">
       Already have account?<br>
@@ -78,11 +66,7 @@
               routerLink="../step1">
         Back
       </button>
-      <button type="button"
-              (click)="registrationForm.reset()"
-              class="btn btn-primary  mr-2">
-        Reset
-      </button>
+
 
       <button type="button"
               class="btn btn-primary  text-uppercase"

@@ -14,7 +14,7 @@ import { FormControl, Validators } from '@angular/forms';
   styleUrls: ['./registration.component.css'],
 
 })
-export class RegistrationComponent implements OnInit, AfterViewChecked, OnChanges {
+export class RegistrationComponent implements OnInit {
   params: RegistrationParams = {};
 
   @ViewChild('emailInput') emailInput: ElementRef;
@@ -34,7 +34,7 @@ export class RegistrationComponent implements OnInit, AfterViewChecked, OnChange
       paramMap.keys.forEach(key => {
         this.params[key] = paramMap.get(key);
         if (key === 'email') fg.patchValue({email: paramMap.get(key)}); // tslint:disable-line
-        else if (key === 'country') fg.patchValue({country: paramMap.get(key)}); // tslint:disable-line
+        else if (key === 'country') fg.patchValue({country: paramMap.get(key).toUpperCase()}); // tslint:disable-line
         else fg.addControl(key, new FormControl(paramMap.get(key))); // tslint:disable-line
       });
     });
@@ -42,15 +42,9 @@ export class RegistrationComponent implements OnInit, AfterViewChecked, OnChange
       this.router.navigate(['step1'],
         {
           relativeTo: this.activatedRoute.parent,
-          // replaceUrl: true,
           skipLocationChange: true,
         });
     }
   }
 
-  ngAfterViewChecked(): void {
-  }
-
-  ngOnChanges(changes: SimpleChanges): void {
-  }
 }

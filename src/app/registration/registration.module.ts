@@ -7,9 +7,12 @@ import { RegistrationFormProvider } from './registration-form.provider';
 import { Step1Component } from './step1/step1.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Step2Component } from './step2/step2.component';
-import { DisplayValidationDirective } from './directive/display-validation.directive';
-import { ErrorDisplayerComponent } from './error-displayer/error-displayer.component';
+import { ErrorDisplayerComponent } from './component/error-displayer/error-displayer.component';
 import { VcinputComponent } from './component/vcinput/vcinput.component';
+import { CompanyNameDomainSyncComponent } from './component/company-name-domain-sync/company-name-domain-sync.component';
+import { SocialGoogleBtnComponent } from './component/social-google-btn/social-google-btn.component';
+import { SocialFacebookBtnComponent } from './component/social-facebook-btn/social-facebook-btn.component';
+import { VcselectComponent } from './component/vcselect/vcselect.component';
 
 const routes: Routes = [
   {
@@ -39,9 +42,12 @@ const routes: Routes = [
     RegistrationComponent,
     Step1Component,
     Step2Component,
-    DisplayValidationDirective,
     ErrorDisplayerComponent,
-    VcinputComponent
+    VcinputComponent,
+    CompanyNameDomainSyncComponent,
+    SocialGoogleBtnComponent,
+    SocialFacebookBtnComponent,
+    VcselectComponent
   ],
   providers: [RegistrationProvider, RegistrationFormProvider]
 })
