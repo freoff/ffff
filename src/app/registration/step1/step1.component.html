@@ -17,8 +17,8 @@
   Your details</h2>
 <div class="entryEmail" *ngIf="editEmailVisable" >
   <p class="text-center subtitle-prefix">
-    User: <span class="font-weight-bold">{{registrationForm.get('email').value}}</span>
-    <a style="color: #e77f1d" (click)="onEditEmailToggle(emailInput)"><i class="fa fa-edit">Edit:</i></a>
+    User: <span class="subtitle-content">{{registrationForm.get('email').value}}</span>
+     <a style="color: #e77f1d" (click)="onEditEmailToggle(emailInput)"><i class="fa fa-edit">Edit:</i></a>
 
   </p>
   <p class="text-danger small text-center" *ngIf="registrationForm.get('email').invalid">Email is inocorect!!</p>
@@ -32,7 +32,8 @@
                  placeholder="eg. John Smith"
                  label="Name"
     ></app-vcinput>
-    <app-vcinput [hidden]="editEmailVisable"
+    <app-vcinput
+                 [hidden]="editEmailVisable"
                  [fieldRequire]="true"
                  myControlName="email"
                  inputType="email"
@@ -42,7 +43,8 @@
 
 
     ></app-vcinput>
-    <app-vcinput myControlName="password"
+    <app-vcinput
+                  myControlName="password"
                  [fieldRequire]="true"
                  inputType="password"
                  label="Password"

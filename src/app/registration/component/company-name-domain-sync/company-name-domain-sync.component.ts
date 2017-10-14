@@ -36,6 +36,8 @@ export class CompanyNameDomainSyncComponent implements OnInit {
   }
 
   validateDomain() {
+    this.domainFromCompanyName = this.domainFromCompanyName.trim();
+    this.domainFromCompanyName = this.domainFromCompanyName.replace(/-+$/,'');
     this.formProvider.registrationForm.get('domain').patchValue(this.domainFromCompanyName, {});
     this.formProvider.registrationForm.get('domain').markAsDirty();
     this.formProvider.registrationForm.get('domain').markAsTouched();

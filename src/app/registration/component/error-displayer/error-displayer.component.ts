@@ -45,7 +45,7 @@ export class ErrorDisplayerComponent implements OnInit, OnDestroy {
               case('required'): /* require */
                 return this.emRequired;
               case('minlength'): /*{'minlength': {'requiredLength': minLength, 'actualLength': length}} :*/
-                return `${this.emMin}${errorObject.requiredLength} now is ${errorObject.actualLength}`;
+                return `${this.emMin} ${errorObject.requiredLength} now is ${errorObject.actualLength}`;
               case('email'):
                 return this.emEmail; /* email:true */
               case('max'):

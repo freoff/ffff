@@ -45,8 +45,9 @@ export class VcinputComponent implements OnInit {
     this.controlObject.setValue('');
   }
 
-  onKeyPress(event: Event) {
+  onKeyPress(event: KeyboardEvent) {
     const target = (<HTMLInputElement>event.target);
     this.valueChange.emit(target.value);
+    
   }
 }

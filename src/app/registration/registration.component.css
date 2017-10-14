@@ -14,7 +14,7 @@
 
   color: #333333;
   font-family: 'Poppins', sans-serif;
-  font-size: 2.1rem;
+  font-size: 1.9rem;
   font-weight: 600;
 }
 
@@ -28,6 +28,17 @@
   text-align: center;
 }
 
+.subtitle-content {
+
+  color: #333333;
+  font-family: Hind;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+  text-align: center;
+}
+
+
 .wrapper {
   height: 100%;
   display: flex;
@@ -39,7 +50,7 @@
 .registration-main {
   background-color: #f7f7f7;
   margin: auto;
-  margin-top: 2rem;
+
 }
 
 input, select {
@@ -58,6 +69,10 @@ button:hover {
   background-color: #e76416;
   border: none;
   outline: none;
+}
+button:focus {
+  outline: none ;
+  box-shadow: none;
 }
 
 button:disabled {
@@ -110,6 +125,9 @@ form > div {
   color: #e77f1d;
   font-size: .8rem;
   text-decoration: none;
+}
+.icon-invalid {
+  color: #E84C0F
 }
 
 /*_________________________________________________________________________*/

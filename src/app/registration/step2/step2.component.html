@@ -1,7 +1,7 @@
 <p>{{registrationForm.value | json}}</p>
 <h2 class="mt-4 text-center text-uppercase title">
   TELL US MORE
-</h2> <h5 class="text-center">About: <span>{{registrationForm.get('companyName').value}}</span></h5>
+</h2> <p class="subtitle-prefix">About: <span class="subtitle-content">{{registrationForm.get('companyName').value}}</span></p>
 <form [formGroup]="registrationForm">
   <div class="form-group">
     <label for="country" class="field-require text-uppercase">
@@ -55,31 +55,23 @@
   >
   </app-vcinput>
 
-  <div class="d-flex  align-items-start flex-wrap">
-    <p class="mr-auto" id="footer-signin">
-      Already have account?<br>
-      <a href="#">Sign in here.</a>
+  <div class="d-flex  justify-content-end align-items-center flex-wrap">
+    <p *ngIf="formStillHaveErrors" class="text-danger font-weight-bold align-middle icon-invalid mr-auto">
+      The form still has errors.
     </p>
-    <div class="d-flex justify-content-end flex-wrap ">
+    <div class="d-flex justify-content-end flex-wrap align-items-center mr-2">
+
       <button type="button"
-              class="btn btn-primary  mr-2"
+              class="btn btn-primary  mr-2 mb-2"
               routerLink="../step1">
         Back
       </button>
 
 
       <button type="button"
-              class="btn btn-primary  text-uppercase"
+              class="btn btn-primary  text-uppercase mb-2"
               (click)="submitForm()"
-              [disabled]="registrationForm.get('name').invalid ||
-                          registrationForm.get('email').invalid ||
-                          registrationForm.get('password').invalid ||
-                          registrationForm.get('companyName').invalid ||
-                          registrationForm.get('domain').invalid ||
-                          registrationForm.get('country').invalid ||
-                          registrationForm.get('timeZone').invalid ||
-                          registrationForm.get('businessSector').invalid ||
-                          registrationForm.get('website').invalid"
+
       >
         Let's get started
       </button>

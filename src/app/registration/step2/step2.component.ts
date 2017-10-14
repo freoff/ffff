@@ -22,12 +22,13 @@ import * as jstz from 'jstz';
   templateUrl: './step2.component.html',
   styleUrls: ['./step2.component.css']
 })
-export class Step2Component implements OnInit{
+export class Step2Component implements OnInit {
   private timeZones: { [prop: string]: { key: string, value: string }[] };
   private _allZone: { key: string, value: string }[];
   public countryList: { code: string, name: string }[];
   public registrationForm: FormGroup;
   public submitedData;
+  formStillHaveErrors = false;
 
 
   get allZone(): { key: string, value: string }[] {
@@ -66,15 +67,30 @@ export class Step2Component implements OnInit{
 
   submitForm() {
 
-    this.registrationProvider.submit();
-    this.submitedData = this.registrationForm.value;
+    if (this.registrationForm.invalid) {
+      this.formStillHaveErrors = true;
+      for (const fc in this.registrationForm.controls) {
+        if (this.registrationForm.controls.hasOwnProperty(fc)) {
+          this.registrationForm.controls[fc].markAsTouched();
+          this.registrationForm.controls[fc].markAsDirty();
+        }
+      }
+
+    } else {
+      this.registrationProvider.submit();
+      this.submitedData = this.registrationForm.value;
+    }
   }
 
   private preselectTimeZone() {
     console.dir(Intl.DateTimeFormat().resolvedOptions());
     const timeZone = jstz.determine().name();
-    const indexInJson = Array.prototype.findIndex.call(this.allZone,it => it.key === timeZone);
-    if(indexInJson > -1) this.registrationForm.patchValue({'timeZone': timeZone}); // tslint:disable-line
+    const indexInJson = Array.prototype.findIndex.call(this.allZone, it => it.key === timeZone);
+    if (indexInJson > -1) {
+      this.registrationForm.patchValue({'timeZone': timeZone});
+      this.registrationForm.get('timeZone').markAsTouched();
+      this.registrationForm.get('timeZone').markAsDirty();
+    } // tslint:disable-line
   }
 
   private preselectCountry() {
@@ -85,5 +101,7 @@ export class Step2Component implements OnInit{
       countryCode = window.navigator.language.slice(3);
     }
     countryCode && this.formProvider.registrationForm.patchValue({country: countryCode}); // tslint:disable-line
+    this.registrationForm.get('country').markAsDirty();
+    this.registrationForm.get('country').markAsTouched();
   }
 }
