@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 
+*{
+  box-sizing: border-box;
+}
+
+
 .content {
   margin: 1rem 3rem 1rem;
 }
@@ -60,18 +65,17 @@ input, select {
 
 button {
   background-color: #e77f1d;
-  border: none;
+  font-weight: 600;
+  border: solid 2px #e77f1d;
   outline: none;
-
+  box-shadow: none;
 }
 
 button:hover {
   background-color: #e76416;
-  border: none;
-  outline: none;
+  box-shadow: none;
 }
 button:focus {
-  outline: none ;
   box-shadow: none;
 }
 
@@ -79,7 +83,18 @@ button:disabled {
   background-color: #ecaa00;
   border: 0;
 }
-
+.back-button {
+  background-color: transparent;
+  color: #e77f1d;
+  border: none;
+  font-weight: 600;
+  margin-right: auto !important;
+}
+.back-button:hover {
+  margin-top: 3px 3px;
+  border: solid 2px #e77f1d;
+  background-color: transparent;
+}
 .social {
   font-size: .8rem;
   align-items: center;

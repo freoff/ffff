@@ -1,31 +1,36 @@
 <p>{{registrationForm.value | json}}</p>
 <h2 class="mt-4 text-center text-uppercase title">
   TELL US MORE
-</h2> <p class="subtitle-prefix">About: <span class="subtitle-content">{{registrationForm.get('companyName').value}}</span></p>
+</h2> <p class="subtitle-prefix">About: <span
+  class="subtitle-content">{{registrationForm.get('companyName').value}}</span></p>
 <form [formGroup]="registrationForm">
   <div class="form-group">
     <label for="country" class="field-require text-uppercase">
       Country:
     </label>
-    <select  name="country" id="country" class="form-control" formControlName="country">
+    <div class="select-area">
+      <span class="arrow fa fa-angle-down"></span>
+      <select name="country" id="country" class="form-control" formControlName="country">
 
-      <option *ngFor="let country of countryList"
-              [value]="country.code">
-        {{ country.code }} - {{ country.name }}
-      </option>
+        <option *ngFor="let country of countryList"
+                [value]="country.code">
+          {{ country.code }} - {{ country.name }}
+        </option>
 
-    </select>
+      </select>
+    </div>
   </div>
   <div class="form-group">
-    <label class="field-require" for="timeZone">TIMEZONE </label>
+    <label class="field-require" for="timeZone">TIMEZONE</label>
 
     <div class="select-area">
+      <span class="arrow fa fa-angle-down"></span>
       <select id="timeZone"
               class="form-control"
               formControlName="timeZone"
 
       >
-        <option value="" selected disabled hidden > -- select an option -- </option>
+        <option value="" selected disabled hidden> -- select an option --</option>
         <option *ngFor="let zone of allZone"
                 [value]="zone.key"
         >
@@ -36,15 +41,18 @@
   </div>
   <div class="form-group">
     <label for="businessSector">BUSINESS SECTOR:</label>
-    <select name="businessSector"
-            id="businessSector"
-            class="form-control"
-            formControlName="businessSector"
-    >
-      <option disabled selected value> -- select an option --</option>
-      <option value="1">B Sector 1</option>
+    <div class="select-area">
+      <span class="arrow fa fa-angle-down"></span>
+      <select name="businessSector"
+              id="businessSector"
+              class="form-control"
+              formControlName="businessSector"
+      >
+        <option disabled selected value> -- select an option --</option>
+        <option value="1">B Sector 1</option>
 
-    </select>
+      </select>
+    </div>
   </div>
   <app-vcinput inputType="text"
                label="add your business website url" i18n-label
@@ -56,16 +64,17 @@
   </app-vcinput>
 
   <div class="d-flex  justify-content-end align-items-center flex-wrap">
-    <p *ngIf="formStillHaveErrors" class="text-danger font-weight-bold align-middle icon-invalid mr-auto">
-      The form still has errors.
-    </p>
+    <button type="button"
+            class="btn btn-primary  mr-2 mb-2 back-button"
+            routerLink="../step1">
+      Back
+    </button>
+
     <div class="d-flex justify-content-end flex-wrap align-items-center mr-2">
 
-      <button type="button"
-              class="btn btn-primary  mr-2 mb-2"
-              routerLink="../step1">
-        Back
-      </button>
+      <p *ngIf="formStillHaveErrors" class="text-danger font-weight-bold align-middle icon-invalid mr-auto">
+        The form still has errors.
+      </p>
 
 
       <button type="button"

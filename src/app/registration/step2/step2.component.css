@@ -16,8 +16,32 @@ select {
 
 .select-area {
   display: flex;
+  position: relative;
   align-items: center;
   border: 1px solid #D7D7D7;
   background-color: #fff;
   padding: 0 .2rem;
+  overflow: hidden;
+}
+.select-area select {
+  width: 110%;
+}
+.select-area span.arrow {
+  position: absolute;
+  color: #e77f1d;
+  right: 3%;
+  z-index: 10;
+  font-size: 1.5rem;
+}
+select::-ms-expand
+{
+  display: none;
+}
+select
+{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 2px 30px 2px 2px;
+  /*border: none; - if you want the border removed*/
 }
